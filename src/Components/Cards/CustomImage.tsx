@@ -1,0 +1,3 @@
+const CustomImage = () => {
+    return;
+}
