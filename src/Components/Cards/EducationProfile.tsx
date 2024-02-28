@@ -1,3 +1,3 @@
-const EducationProfile = () => {
+export const EducationProfile = () => {
     return;
 }

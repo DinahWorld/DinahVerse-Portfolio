@@ -1,3 +1,3 @@
-const MainProject = () => {
+export const MainProject = () => {
     return;
 }

@@ -1,3 +1,3 @@
-const Blured = () => {
+export const Blured = () => {
     return;
 }

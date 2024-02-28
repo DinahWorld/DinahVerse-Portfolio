@@ -7,6 +7,7 @@ import {getSvgPath} from "figma-squircle";
 import {useMousePosition} from "Hook/useMousePosition";
 import Filter from "Components/Background/Filter/Filter";
 
+
 const svgPath = getSvgPath({
     width: 2060,
     height: 2060,
@@ -22,10 +23,10 @@ const HomeBanner = () => {
 
         <Grid container sx={{
             backgroundColor: "#000018",
-            borderRadius: "3.625rem",
-            height: "100%",
-            clipPath: `path('${svgPath}')`
+            borderRadius: "1.625rem",
+            height: "100%"
         }}>
+
             <Grid item sx={{position: "absolute", bottom: "8%", left: "8%"}}>
                 <Typography fontWeight={"bold"} color={"white"} fontSize={"3rem"}>Hi, I’m Dinath. <br/>A Full-Stack
                     Developper</Typography>
@@ -33,7 +34,8 @@ const HomeBanner = () => {
             </Grid>
             <svg v-fill='none' xmlns='http://www.w3.org/2000/svg' style={{width: "100%"}}>
                 <Planet x={(-position.x / 60) - 1000} y={(position.y / 80) - 1200} sizex={1} sizey={2000}/>
-                <Meteor x={(-position.x / 200) - 1000} y={(-position.y / 30) - 1200} sizex={1} sizey={1600}/>
+                <Filter x={(position.x / 60) - 1100} y={(position.y / 80) - 1100} sizex={1} sizey={2000}/>
+                <Meteor x={(-position.x / 200) - 1000} y={(-position.y / 200) - 1200} sizex={1} sizey={1600}/>
                 <Stars x={(-position.x / 100) + 250} y={(position.y / 60)} sizex={300} sizey={500}/>
                 <Planet x={(position.x / 40) + 600} y={(position.y / 60) - 50} sizex={100} sizey={800}/>
                 <Filter x={(position.x / 20) + 500} y={(position.y / 60) - 50} sizex={100} sizey={800}/>

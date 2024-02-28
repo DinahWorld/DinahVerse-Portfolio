@@ -1,3 +1,3 @@
-const CustomImage = () => {
+export const CustomImage = () => {
     return;
 }
