@@ -1,8 +1,10 @@
 import React from "react";
 import {Grid} from "@mui/material";
-import Home from "Page/Home/Home";
-import AboutMe from "./AboutMe/AboutMe";
-import Education from "./Education";
+import Home from "Page/Home";
+import AboutMe from "Page/AboutMe";
+import Education from "Page/Education";
+import Experience from "Page/Experience";
+import PersonalProject from "Page/PersonalProject";
 
 const App = () => {
     return (
@@ -15,6 +17,12 @@ const App = () => {
             </Grid>
             <Grid item xs={12}>
                 <Education/>
+            </Grid>
+            <Grid item xs={12}>
+                <Experience/>
+            </Grid>
+            <Grid item xs={12}>
+                <PersonalProject/>
             </Grid>
         </Grid>
     );

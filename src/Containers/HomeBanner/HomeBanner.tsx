@@ -19,6 +19,7 @@ const svgPath = getSvgPath({
 
 const HomeBanner = () => {
     const position = useMousePosition();
+
     return (
 
         <Grid container sx={{
@@ -33,7 +34,7 @@ const HomeBanner = () => {
                 <Typography color={"white"} fontSize={"1rem"}>Welcome to my DinahVerse</Typography>
             </Grid>
             <svg v-fill='none' xmlns='http://www.w3.org/2000/svg' style={{width: "100%"}}>
-                <Planet x={(-position.x / 60) - 1000} y={(position.y / 80) - 1200} sizex={1} sizey={2000}/>
+                npm <Planet x={(-position.x / 60) - 1000} y={(position.y / 80) - 1200} sizex={1} sizey={2000}/>
                 <Filter x={(position.x / 60) - 1100} y={(position.y / 80) - 1100} sizex={1} sizey={2000}/>
                 <Meteor x={(-position.x / 200) - 1000} y={(-position.y / 200) - 1200} sizex={1} sizey={1600}/>
                 <Stars x={(-position.x / 100) + 250} y={(position.y / 60)} sizex={300} sizey={500}/>
@@ -42,7 +43,6 @@ const HomeBanner = () => {
                 <Meteor x={(position.x / 10) + 100} y={(position.y / 30) - 80} sizex={100} sizey={400}/>
                 <Meteor x={(-position.x / 15) - 1900} y={(position.y / 30) - 400} sizex={100} sizey={3000}/>
             </svg>
-            {/*<Stars/>*/}
         </Grid>
     );
 }

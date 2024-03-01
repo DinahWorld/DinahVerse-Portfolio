@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Kotori Rose';
+    src: url('fonts/Kotor/KotoriRose-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+url('fonts/Kotor/KotoriRose-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Kotori Rose';
+    src: url('fonts/Kotor/KotoriRose-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #F0F1FA;
+    background-image: url(assets/my-noise.png);
+    font-family: 'Kotori Rose', serif;
+}

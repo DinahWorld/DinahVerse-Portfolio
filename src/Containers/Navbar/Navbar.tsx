@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Grid} from "@mui/material";
-import DinAvatar from "../../Components/Navbar/DinAvatar/DinAvatar";
+import DinAvatar from "Components/Navbar/DinAvatar/DinAvatar";
 
 const Navbar = () => {
     return (
