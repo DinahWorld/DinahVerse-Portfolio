@@ -15,9 +15,10 @@ const EducationCard = (props: EducationCardProps) => {
                       padding: "3rem",
                       paddingLeft: "3rem",
                       paddingRight: "3rem",
-                      borderRadius: "3rem",
-                      border: "2px solid #e5e7ff",
-                      backdropFilter: "blur(9.949999809265137px)"
+                      borderRadius: "3.5rem",
+                      border: "0.5px solid #e5e7ff",
+                      background: "radial-gradient(50% 50% at 50% 50%, rgba(209, 216, 255, 0.20) 0%, rgba(224, 229, 255, 0.20) 100%)",
+                      backdropFilter: "blur(12.699999809265137px)"
                   }}
                   gap={4}
             >

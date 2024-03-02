@@ -5,6 +5,9 @@ import ExperienceCard from "../../Components/Cards/ExperienceCard";
 const Experience = () => {
     return (
         <Grid container gap={20}>
+            <Grid item sx={{position: "absolute", zIndex: "-1"}} xs={12}>
+                <img src={"assets/snake/snake-2.svg"} alt={""} style={{width: "100%"}}/>
+            </Grid>
             <Grid container item xs={12}>
                 <Grid item xs={'auto'}>
                     <Typography fontSize={"6rem"}>Experience</Typography>
@@ -17,7 +20,7 @@ const Experience = () => {
                         enim. Elit massa orci nullam cras tristique nunc phasellus blandit.</Typography>
                 </Grid>
             </Grid>
-            <Grid container item xs={12} gap={50} justifyContent={"center"} alignItems={"center"}>
+            <Grid container item xs={12} gap={35} justifyContent={"center"} alignItems={"center"}>
                 <ExperienceCard
                     deg={"10"}
                     title={"Back-End Developer"}

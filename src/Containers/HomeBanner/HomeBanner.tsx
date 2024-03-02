@@ -6,6 +6,7 @@ import Stars from "Components/Background/Stars";
 import {getSvgPath} from "figma-squircle";
 import {useMousePosition} from "Hook/useMousePosition";
 import Filter from "Components/Background/Filter/Filter";
+import CustomStars from "../../Components/Background/CustomStars/CustomStars";
 
 
 const svgPath = getSvgPath({
@@ -34,14 +35,17 @@ const HomeBanner = () => {
                 <Typography color={"white"} fontSize={"1rem"}>Welcome to my DinahVerse</Typography>
             </Grid>
             <svg v-fill='none' xmlns='http://www.w3.org/2000/svg' style={{width: "100%"}}>
-                npm <Planet x={(-position.x / 60) - 1000} y={(position.y / 80) - 1200} sizex={1} sizey={2000}/>
-                <Filter x={(position.x / 60) - 1100} y={(position.y / 80) - 1100} sizex={1} sizey={2000}/>
-                <Meteor x={(-position.x / 200) - 1000} y={(-position.y / 200) - 1200} sizex={1} sizey={1600}/>
+                <Planet x={(-position.x / 60) - 1000} y={(position.y / 80) - 1200} sizex={100} sizey={2000}/>
+                <Filter x={(position.x / 60) - 1100} y={(position.y / 80) - 1100} sizex={100} sizey={2000}/>
+                <Meteor x={(-position.x / 40) - 1000} y={(position.y / 40) - 1200} sizex={100} sizey={1600}/>
                 <Stars x={(-position.x / 100) + 250} y={(position.y / 60)} sizex={300} sizey={500}/>
-                <Planet x={(position.x / 40) + 600} y={(position.y / 60) - 50} sizex={100} sizey={800}/>
+                <Planet x={(position.x / 40) + 600} y={(position.y / 60) - 50} sizex={80} sizey={800}/>
                 <Filter x={(position.x / 20) + 500} y={(position.y / 60) - 50} sizex={100} sizey={800}/>
                 <Meteor x={(position.x / 10) + 100} y={(position.y / 30) - 80} sizex={100} sizey={400}/>
-                <Meteor x={(-position.x / 15) - 1900} y={(position.y / 30) - 400} sizex={100} sizey={3000}/>
+                <Meteor x={(-position.x / 8) - 1900} y={(position.y / 8) - 400} sizex={100} sizey={3000}/>
+                <CustomStars x={(position.x / 15) - 1400} y={(position.y / 20) - 300} sizex={3500} sizey={2000}/>
+                <CustomStars x={(position.x / 20) - 900} y={(position.y / 20) - 1800} sizex={7000} sizey={2000}/>
+                <CustomStars x={(-position.x / 20) - 6500} y={(position.y / 30) - 1500} sizex={9000} sizey={2000}/>
             </svg>
         </Grid>
     );

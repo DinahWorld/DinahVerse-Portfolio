@@ -4,13 +4,30 @@ import Planet from "Components/Background/Planet";
 import Meteor from "Components/Background/Meteor";
 import Stars from "Components/Background/Stars";
 import {useMousePosition} from "Hook/useMousePosition";
-import Stack from "../../Components/Cards/Stack";
+import StackIcon from "../../Components/Cards/StackIcon";
+import ProfileDesc from "../../Components/Cards/ProfileDesc/ProfileDesc";
 
 const AboutMe = () => {
     const position = useMousePosition();
 
     return (
         <Grid container justifyContent={"center"} alignItems={"center"} sx={{height: "100vh"}} gap={8}>
+            <Grid item sx={{
+                position: "absolute",
+                height: "100%",
+                width: "100%"
+            }}>
+                <svg
+                    v-fill="none"
+                    style={{width: "100%", height: "100%"}}
+                >
+                    <Planet x={(position.x / 70) + 200} y={(position.y / 70) - 800} sizex={2000} sizey={1500}/>
+                    <Planet x={(position.x / 50) - 1300} y={(position.y / 50) - 100} sizex={2000} sizey={1500}/>
+                    <Stars x={(-position.x / 60) + 250} y={(position.y / 60) + 200} sizex={1000} sizey={500}/>
+                    <Meteor x={(position.x / 100) - 600} y={(-position.y / 100) + 60} sizex={800} sizey={100}/>
+                    <Meteor x={(-position.x / 120) - 100} y={(-position.y / 100) + 300} sizex={2000} sizey={100}/>
+                </svg>
+            </Grid>
             <Grid item container position="relative" xs={'auto'}>
                 <Grid item>
                     <img src="assets/avatar/about_avatar.png" alt={""} style={{width: "25vw"}}/>
@@ -34,9 +51,28 @@ const AboutMe = () => {
                         <Meteor x={(-position.x / 120) + 20} y={(-position.y / 120) + 300} sizex={2000} sizey={100}/>
                     </svg>
                 </Grid>
-
+                <Grid item container gap={1} sx={{
+                    position: "absolute",
+                    bottom: 40,
+                    left: 30
+                }}>
+                    <Grid container item xs={12}>
+                        <Grid item xs={12}>
+                            <Typography color={"white"} fontSize={"1.8rem"}
+                                        fontWeight={"bold"}>SUNTHARARAJAH</Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography color={"white"} fontSize={"1.6rem"} fontWeight={"bold"}>Dinath</Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid item container xs={12} gap={1.3}>
+                        <ProfileDesc desc={"Spring Boot"}/>
+                        <ProfileDesc desc={"ReactJS"}/>
+                        <ProfileDesc desc={"Full Stack"}/>
+                    </Grid>
+                </Grid>
             </Grid>
-            <Grid item container xs={3.5}
+            <Grid item container md={5} lg={3.5}
                   gap={5}
                   sx={{
                       padding: "1.5rem",
@@ -49,7 +85,7 @@ const AboutMe = () => {
                   }}
             >
                 <Grid item xs={12}>
-                    <Typography fontWeight={"bold"} fontSize={"1.8rem"}> Hi, I’m Dinath 👋🏾 </Typography>
+                    <Typography fontWeight={"bold"} fontSize={"1.8rem"}>Hi, I’m Dinath 👋🏾</Typography>
                 </Grid>
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
@@ -75,41 +111,41 @@ const AboutMe = () => {
                     </Grid>
                     <Grid container item xs={12} gap={1} justifyContent={"center"} alignItems={"center"}>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/spring_boot.svg"}/>
+                            <StackIcon img={"assets/stack/spring_boot.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/java.svg"}/>
+                            <StackIcon img={"assets/stack/java.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/react.svg"}/>
+                            <StackIcon img={"assets/stack/react.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/vuejs.svg"}/>
+                            <StackIcon img={"assets/stack/vuejs.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/jira.svg"}/>
+                            <StackIcon img={"assets/stack/jira.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/docker.svg"}/>
+                            <StackIcon img={"assets/stack/docker.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/postgresql.svg"}/>
+                            <StackIcon img={"assets/stack/postgresql.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/jenkins.svg"}/>
+                            <StackIcon img={"assets/stack/jenkins.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/figma.svg"}/>
+                            <StackIcon img={"assets/stack/figma.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Stack img={"assets/stack/git.svg"}/>
+                            <StackIcon img={"assets/stack/git.svg"}/>
                         </Grid>
                     </Grid>
                 </Grid>
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
                         <Typography fontSize={"1.2rem"}>
-                            Stack
+                            Languages
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
