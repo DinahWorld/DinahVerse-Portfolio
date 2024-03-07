@@ -36,7 +36,6 @@ const Experience = () => {
                     title={"Student Tutor"}
                     description={"Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget. Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit."}
                 />
-                t
             </Grid>
         </Grid>
     )

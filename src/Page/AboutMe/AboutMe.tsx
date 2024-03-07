@@ -6,6 +6,7 @@ import Stars from "Components/Background/Stars";
 import {useMousePosition} from "Hook/useMousePosition";
 import StackIcon from "../../Components/Cards/StackIcon";
 import ProfileDesc from "../../Components/Cards/ProfileDesc/ProfileDesc";
+import CustomStars from "../../Components/Background/CustomStars/CustomStars";
 
 const AboutMe = () => {
     const position = useMousePosition();
@@ -26,6 +27,10 @@ const AboutMe = () => {
                     <Stars x={(-position.x / 60) + 250} y={(position.y / 60) + 200} sizex={1000} sizey={500}/>
                     <Meteor x={(position.x / 100) - 600} y={(-position.y / 100) + 60} sizex={800} sizey={100}/>
                     <Meteor x={(-position.x / 120) - 100} y={(-position.y / 100) + 300} sizex={2000} sizey={100}/>
+                    <CustomStars x={(position.x / 15) - 100} y={(position.y / 20) - 300} sizex={3500} sizey={2000}/>
+                    <CustomStars x={(position.x / 20) - 100} y={(position.y / 20) - 1800} sizex={7000} sizey={2000}/>
+                    <CustomStars x={(-position.x / 20) - 8000} y={(position.y / 30) - 3000} sizex={9000} sizey={2000}/>
+
                 </svg>
             </Grid>
             <Grid item container position="relative" xs={'auto'}>

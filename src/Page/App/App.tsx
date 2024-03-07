@@ -6,6 +6,7 @@ import Education from "Page/Education";
 import Experience from "Page/Experience";
 import PersonalProject from "Page/PersonalProject";
 
+
 const App = () => {
     return (
         <Grid container>
@@ -15,9 +16,7 @@ const App = () => {
             <Grid item xs={12}>
                 <AboutMe/>
             </Grid>
-            <Grid item xs={12}>
-                <Education/>
-            </Grid>
+            <Education/>
             <Grid item xs={12}>
                 <Experience/>
             </Grid>
