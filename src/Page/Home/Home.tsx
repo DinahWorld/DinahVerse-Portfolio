@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <Grid container className={classes.home} justifyContent={"center"} alignItems="stretch"
-              direction={"column"} gap={5}>
+              direction={"column"} gap={2}>
             <Grid item xs={'auto'} className={classes.navbar}>
                 <Navbar/>
             </Grid>

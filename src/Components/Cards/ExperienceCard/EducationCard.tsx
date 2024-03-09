@@ -1,16 +1,59 @@
 import React from "react";
 import {Grid, Typography} from "@mui/material";
+import StackIcon from "../StackIcon";
 
 interface EducationCardProps {
     title: string,
     description: string,
-    deg: string
+    deg: string,
+    url: string,
+    job: number,
 }
 
+const stack = (job: number) => {
+    switch (job) {
+        case 1:
+            return (
+                <Grid item container xs={12} gap={2}>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/spring_boot.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/java.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/jira.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/jenkins.svg"}/>
+                    </Grid>
+                </Grid>
+            );
+        case 2:
+            return (
+                <Grid item container xs={12} gap={2}>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/java.svg"}/>
+                    </Grid>
+                </Grid>
+            );
+        case 3:
+            return (
+                <></>
+            );
+    }
+
+}
 const EducationCard = (props: EducationCardProps) => {
+
+
     return (
-        <Grid container item xs={12} gap={24} justifyContent={"center"} alignItems={"center"}>
-            <Grid item container xs={4}
+        <Grid container item xs={10} gap={10} justifyContent={"center"} alignItems={"center"}>
+            <Grid item container
+                  border={2}
+                  xs={11}
+                  sm={11}
+                  md={5}
                   sx={{
                       padding: "3rem",
                       paddingLeft: "3rem",
@@ -31,11 +74,20 @@ const EducationCard = (props: EducationCardProps) => {
                     <Typography fontSize={"0.9rem"}>
                         {props.description}
                     </Typography>
+
                 </Grid>
+                {stack(props.job)}
             </Grid>
             <Grid item xs={'auto'}>
-                <img src={"assets/experience/blank.png"} alt={""}
-                     style={{transform: "rotate(" + props.deg + "deg)", width: "30vw"}}/>
+                <img src={props.url}
+                     alt={""}
+                     style={{
+                         transform: "rotate(" + props.deg + "deg)",
+                         objectFit: "cover",
+                         borderRadius: "3rem",
+                         height: "13rem",
+                         width: "24rem"
+                     }}/>
             </Grid>
         </Grid>
     );

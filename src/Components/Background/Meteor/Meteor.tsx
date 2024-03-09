@@ -12,8 +12,8 @@ const Meteor: React.FC<BackgroundProps> = (props: BackgroundProps) => {
             <defs>
                 <linearGradient id="paint0_linear_3872_408" x1="36.9423" y1="252.272" x2="349.68" y2="-18.0017"
                                 gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#B2BFFF"/>
-                    <stop offset="0.785" stop-color="white" stop-opacity="0.68"/>
+                    <stop stopColor="#B2BFFF"/>
+                    <stop offset="0.785" stopColor="white" stopOpacity="0.68"/>
                 </linearGradient>
             </defs>
         </svg>

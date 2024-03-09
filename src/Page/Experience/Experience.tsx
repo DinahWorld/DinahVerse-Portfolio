@@ -20,18 +20,24 @@ const Experience = () => {
                         enim. Elit massa orci nullam cras tristique nunc phasellus blandit.</Typography>
                 </Grid>
             </Grid>
-            <Grid container item xs={12} gap={35} justifyContent={"center"} alignItems={"center"}>
+            <Grid container item xs={12} gap={26} justifyContent={"center"} alignItems={"center"}>
                 <ExperienceCard
+                    job={1}
+                    url={"assets/experience/bnp.png"}
                     deg={"10"}
-                    title={"Back-End Developer"}
+                    title={"Back-End Java Developer"}
                     description={"Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget. Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit."}
                 />
                 <ExperienceCard
+                    job={2}
+                    url={"assets/experience/chart.png"}
                     deg={"-10"}
                     title={"Java Developer"}
                     description={"Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget. Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit."}
                 />
                 <ExperienceCard
+                    job={3}
+                    url={"assets/experience/p8.png"}
                     deg={"13"}
                     title={"Student Tutor"}
                     description={"Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget. Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit."}

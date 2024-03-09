@@ -9,71 +9,95 @@ interface EducationProfileProps {
 
 const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
     let imagePath = "";
-    let sx: SxProps<Theme> = {};
-    let sxImg: CSSProperties = {};
+    let containerSx: SxProps<Theme> = {};
+    let imgSx: CSSProperties = {};
 
     switch (imageNumber) {
         case 1:
             imagePath = "assets/aboutMe/mini.png";
-            sx = {
-                width: "300px",
-                height: "400px",
-                border: "3px solid black",
+            containerSx = {
+                width: "380px",
+                height: "450px",
                 position: "relative",
-                backgroundColor: "rgba(0, 0, 0, 0.49)",
-                borderRadius: "3.2em"
+                backgroundColor: "rgba(179, 191, 255, 0.49)",
+                borderRadius: "3.2em",
+                backgroundImage: "url(assets/noise/blue.png)",
+                backgroundSize: "cover",
+
             };
-            sxImg = {}
+            imgSx = {
+                position: "absolute",
+                width: "100%",
+                bottom: "0",
+                left: "-20%"
+            }
             break;
         case 2:
             imagePath = "assets/aboutMe/young.png";
-            sx = {
-                width: "300px",
-                height: "400px",
-                border: "3px solid black",
+            containerSx = {
+                width: "380px",
+                height: "450px",
                 position: "relative",
-                backgroundColor: "rgba(0, 0, 0, 0.49)",
-                borderRadius: "3.2em"
+                backgroundColor: "rgba(255, 188, 179, 0.49)",
+                borderRadius: "3.2em",
+                backgroundImage: "url(assets/noise/red.png)",
+                backgroundSize: "contain"
+
+
             };
+            imgSx = {
+                position: "absolute",
+                width: "110%",
+                bottom: "-1%",
+                left: "10%"
+            }
+
             break;
         case 3:
             imagePath = "assets/aboutMe/adult.png";
-            sx = {
-                width: "300px",
-                height: "400px",
-                border: "3px solid black",
+            containerSx = {
+                width: "380px",
+                height: "450px",
                 position: "relative",
                 backgroundColor: "rgba(0, 0, 0, 0.49)",
-                borderRadius: "3.2em"
+                borderRadius: "3.2em",
+                backgroundImage: "url(assets/noise/black.png)",
+                backgroundSize: "contain"
             };
+            imgSx = {
+                position: "absolute",
+                width: "120%",
+                bottom: "0",
+                left: "-20%"
+            }
+
             break;
         default:
-            sx = {
-                width: "300px",
-                height: "400px",
-                border: "3px solid black",
+            containerSx = {
+                width: "500px",
+                height: "600px",
                 position: "relative",
-                backgroundColor: "rgba(0, 0, 0, 0.49)",
-                borderRadius: "3.2em"
+                backgroundColor: "rgba(179, 191, 255, 0.49)",
+                borderRadius: "3.2em",
+                backgroundImage: "assets/noise/blue.png",
+                backgroundSize: "contain"
+
             };
+            imgSx = {
+                position: "absolute",
+                width: "120%",
+                bottom: "0",
+                left: "-20%"
+            }
+
             imagePath = "assets/aboutMe/mini.png";
             break;
     }
 
     return (
 
-        <Grid container
-              sx={sx}>
-            <img
-                style={{
-                    position: "absolute",
-                    width: "120%",
-                    bottom: "0",
-                    left: "-20%"
-                }}
-                src={imagePath}
-                alt={`Education Image ${imageNumber}`}
-            />
+        <Grid container sx={containerSx}>
+            <img style={imgSx} src={imagePath}/>
         </Grid>
     );
 };
