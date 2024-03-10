@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import {Grid, Typography} from "@mui/material";
 import DimoVR from "./Components/DimoVR";
 import Sasia from "./Components/Sasia";
 import ProjectCard from "./Components/ProjectCard";
 
 const PersonalProject = () => {
-    const [selectedId, setSelectedId] = useState("")
 
     return (
         <Grid container gap={5} sx={{marginTop: "10rem", marginBottom: "10rem"}}>
