@@ -1,2 +1,0 @@
-.btn{border:none;font-family:Kotori Rose,serif;font-size:1rem;padding:10px 44px;position:relative}.btn:before{content:"";height:100%;left:0;position:absolute;top:0;transition:all .6s cubic-bezier(.68,-.2,.265,1);width:50%}.btn.rounded{background:#070224;border-radius:50px}.btn.rounded .text-green{color:#fff;mix-blend-mode:difference}.btn.rounded:before{background:#fff;border-radius:50px;height:.8rem;left:10%;top:30%;width:.8rem}.btn.rounded:hover:before{background:#fff;color:#070224;height:100%;left:0;top:0;width:100%}
-/*# sourceMappingURL=main.a0addc38.css.map*/
