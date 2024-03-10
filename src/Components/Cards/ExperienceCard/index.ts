@@ -1,3 +1,3 @@
-import EducationCard from "./EducationCard";
+import ExperienceCard from "./ExperienceCard";
 
-export default EducationCard;
+export default ExperienceCard;

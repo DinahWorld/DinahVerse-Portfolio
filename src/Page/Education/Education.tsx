@@ -30,7 +30,8 @@ const Education = () => {
         <Grid item container xs={12} sx={{height: "400vh"}}>
 
             <Grid item container xs={12} className={"sticky-element"}
-
+                  justifyContent={"center"}
+                  alignItems={"center"}
                   sx={{
                       position: "sticky",
                       height: "100vh",
@@ -38,44 +39,48 @@ const Education = () => {
                       backgroundImage: "url(assets/my-noise.png)",
                   }}
             >
-                <Grid item sx={{position: "absolute", zIndex: "-1"}}>
+                <Grid item sx={{position: "absolute", zIndex: "-1", left: "0%"}}>
                     <img src={"assets/snake/snake-1.svg"} alt={""}/>
                 </Grid>
-
-                <Grid container item xs={12}
-                      direction={"row"}
-                      alignItems={"center"}
-                      sx={{height: "100%", padding: "10px"}}
-                >
-                    <Grid item xs={12}>
-                        <Typography fontSize={"6rem"}>Education</Typography>
-                    </Grid>
-
-                    <Grid item container xs={12}
-                          justifyContent={"center"}
+                <Grid container item xs={11}>
+                    <Grid container item xs={12}
                           alignItems={"center"}
-                          gap={6}
-
-                          sx={{height: "auto"}}
+                          sx={{height: "100%", padding: "10px"}}
                     >
-                        <Grid item container md={6} sm={10} xs={10} justifyContent={"center"} alignItems={"center"}>
-                            <EducationInfo
-                                imageNumber={hookedYPosition > progressBarLength / 2 ? 3 : (hookedYPosition > progressBarLength / 3 ? 2 : 1)}/>
-                        </Grid>
-                        <Grid item xs={'auto'}>
-                            <EducationProfile
-                                imageNumber={hookedYPosition > progressBarLength / 2 ? 3 : (hookedYPosition > progressBarLength / 3 ? 2 : 1)}/>
-                        </Grid>
-                    </Grid>
-                    <Grid item container xs={12} justifyContent={"center"} alignItems={"center"}>
-                        <Grid item container xs={'auto'}
-                              sx={{
-                                  backgroundColor: "#D2D8FC",
-                                  borderRadius: "3.5rem",
-                                  height: "10px",
-                              }}>
-                            <Slidebar hookedYPosition={hookedYPosition}
-                                      imageNumber={hookedYPosition > progressBarLength / 2 ? 3 : (hookedYPosition > progressBarLength / 3 ? 2 : 1)}/>
+
+                        <Grid item container xs={12}
+                              justifyContent={"center"}
+                              alignItems={"center"}
+                              gap={6}
+                              sx={{height: "auto"}}
+                        >
+                            <Grid item xs={12}>
+                                <Typography fontWeight={"bold"}
+                                            sx={{
+                                                fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
+                                            }}
+                                >
+                                    Education
+                                </Typography>
+                            </Grid>
+                            <Grid item container md={6} sm={10} xs={10} justifyContent={"center"} alignItems={"center"}>
+                                <EducationInfo
+                                    imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                            </Grid>
+                            <Grid item xs={'auto'}>
+                                <EducationProfile
+                                    imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                            </Grid>
+                            <Grid item container xs={12} justifyContent={"center"} alignItems={"center"}>
+                                <Grid item container xs={'auto'}>
+                                    <Slidebar
+                                        first={progressBarLength * 0.25}
+                                        second={progressBarLength * 0.75}
+                                        length={progressBarLength}
+                                        hookedYPosition={hookedYPosition}
+                                        imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
