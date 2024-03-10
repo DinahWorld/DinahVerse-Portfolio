@@ -54,16 +54,23 @@ const Education = () => {
                               gap={6}
                               sx={{height: "auto"}}
                         >
-                            <Grid item xs={12}>
-                                <Typography fontWeight={"bold"}
-                                            sx={{
-                                                fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
-                                            }}
-                                >
-                                    Education
-                                </Typography>
-                            </Grid>
+
                             <Grid item container md={6} sm={10} xs={10} justifyContent={"center"} alignItems={"center"}>
+                                <Grid item xs={12}>
+                                    <Typography fontWeight={"bold"}
+                                                sx={{
+                                                    fontSize: {
+                                                        xs: "3.2rem",
+                                                        sm: "5rem",
+                                                        md: "5.6rem",
+                                                        lg: "6rem",
+                                                        xl: "6rem"
+                                                    }
+                                                }}
+                                    >
+                                        Education
+                                    </Typography>
+                                </Grid>
                                 <EducationInfo
                                     imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
                             </Grid>
