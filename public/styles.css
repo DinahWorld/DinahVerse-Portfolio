@@ -17,4 +17,6 @@ body {
     background-color: #F0F1FA;
     background-image: url(assets/my-noise.png);
     font-family: 'Kotori Rose', serif;
+    padding: 0;
+    margin: 0;
 }
