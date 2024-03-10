@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DinahVerse/static/css/main.a0addc38.css",
+    "main.js": "/DinahVerse/static/js/main.d04f6f56.js",
+    "static/js/453.f1550b01.chunk.js": "/DinahVerse/static/js/453.f1550b01.chunk.js",
+    "index.html": "/DinahVerse/index.html",
+    "main.a0addc38.css.map": "/DinahVerse/static/css/main.a0addc38.css.map",
+    "main.d04f6f56.js.map": "/DinahVerse/static/js/main.d04f6f56.js.map",
+    "453.f1550b01.chunk.js.map": "/DinahVerse/static/js/453.f1550b01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0addc38.css",
+    "static/js/main.d04f6f56.js"
+  ]
+}
