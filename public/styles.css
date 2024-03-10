@@ -14,6 +14,7 @@ url('fonts/Kotor/KotoriRose-Bold.otf');
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: #F0F1FA;
     background-image: url(assets/my-noise.png);
     font-family: 'Kotori Rose', serif;

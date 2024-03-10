@@ -1,0 +1,49 @@
+
+.btn {
+  border: none;
+  padding: 10px 44px;
+  font-size: 1rem;
+  font-family: 'Kotori Rose', serif;
+  position: relative;
+
+  &::before {
+    transition: all 0.6s cubic-bezier(0.68, -0.2, 0.265, 1);
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  &.rounded {
+    border-radius: 50px;
+    background: #070224;
+
+    & .text-green {
+      color: #ffffff;
+      mix-blend-mode: difference;
+    }
+
+    &::before {
+      border-radius: 50px;
+      width: 0.8rem;
+      height: 0.8rem;
+      left: 10%;
+      top: 30%;
+      background: #ffffff;
+    }
+
+    &:hover {
+      &::before {
+        left: 0;
+        top: 0;
+        height: 100%;
+        color: #070224;
+        background: #ffffff;
+        width: 100%;
+      }
+    }
+  }
+}

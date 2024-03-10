@@ -11,19 +11,25 @@ const AboutMe = () => {
     return (
         <>
             <AboutMeBackground/>
-            <Grid container justifyContent={"center"} alignItems={"center"} sx={{minHeight: "100vh"}} gap={8}>
+            <Grid container justifyContent={"center"} alignItems={"center"}
+                  sx={{
+                      minHeight: "100vh",
+                      marginTop: "3rem",
+                      marginBottom: "3rem"
+                  }}
+                  gap={8}
+            >
                 {isScreenGreaterThaMD &&
                     <Grid item container position="relative" xs={'auto'}>
                         <AboutMePicture/>
                     </Grid>
                 }
-                <Grid item container md={6} sm={10} lg={5} xs={10}
-                      gap={5}
+                <Grid item container
+                      xs={11} sm={11} md={6} lg={5}
+                      gap={3}
                       sx={{
                           height: "80%",
                           padding: "1.5rem",
-                          paddingLeft: "3rem",
-                          paddingRight: "3rem",
                           borderRadius: "3rem",
                           border: "2px solid #e5e7ff",
                           background: "radial-gradient(50% 50% at 50% 50%, rgba(180, 180, 180, 0.20) 0%, rgba(255, 255, 255, 0.09) 100%)",

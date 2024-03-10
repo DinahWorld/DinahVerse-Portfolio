@@ -1,4 +1,4 @@
-import {Grid, Typography} from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material";
 import Planet from "Components/Background/Planet";
 import Stars from "Components/Background/Stars";
 import Meteor from "Components/Background/Meteor";
@@ -6,16 +6,16 @@ import ProfileDesc from "Components/SubPage/AboutMe/Components/ProfileDesc/Profi
 import React from "react";
 import {useMousePosition} from "Hook/useMousePosition";
 
+
 const AboutMePicture = () => {
     const position = useMousePosition();
 
     return (
         <>
             <Grid item xs={'auto'}>
-                <img src="assets/avatar/about_avatar.png"
-                     alt={""}
-                     style={{
-                         width: "38vw",
+                <Box component={"img"} src="assets/avatar/about_avatar.png"
+                     sx={{
+                         width: {md: "24rem", lg: "26rem"},
                          borderRadius: "3.5em",
                          height: "100%"
                      }}

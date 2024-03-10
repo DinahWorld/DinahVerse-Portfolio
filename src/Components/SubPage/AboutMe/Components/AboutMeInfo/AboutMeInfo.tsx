@@ -46,14 +46,21 @@ const AboutMeInfo = () => {
                         <StackIcon img={"assets/stack/vuejs.svg"}/>
                     </Grid>
                     <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/postgresql.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/cassandra.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/spark.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/jira.svg"}/>
                     </Grid>
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/docker.svg"}/>
                     </Grid>
-                    <Grid item xs={'auto'}>
-                        <StackIcon img={"assets/stack/postgresql.svg"}/>
-                    </Grid>
+
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/jenkins.svg"}/>
                     </Grid>
@@ -63,9 +70,14 @@ const AboutMeInfo = () => {
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/git.svg"}/>
                     </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/bash.svg"}/>
+                    </Grid>
+
+
                 </Grid>
             </Grid>
-            <Grid container item xs={12} gap={2}>
+            <Grid container item xs={12} gap={1}>
                 <Grid item xs={12}>
                     <Typography fontSize={"1.2rem"}>
                         Languages
@@ -73,7 +85,7 @@ const AboutMeInfo = () => {
                 </Grid>
                 <Grid item xs={12}>
                     <Typography fontSize={"0.8rem"}>
-                        Français - English - Tamil
+                        French - English - Tamil
                     </Typography>
                 </Grid>
             </Grid>

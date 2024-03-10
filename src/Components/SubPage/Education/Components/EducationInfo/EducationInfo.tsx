@@ -31,7 +31,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             textColor = "#0F1727";
             schoolGrade = "Master of Science in Computer Science"
             schoolAddr = "Paris, France"
-            school = "Epitech Technology Paris";
+            school = "Epitech Technology";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.20) 0%, rgba(199, 199, 199, 0.20) 100%)";
             break;
     }
@@ -40,9 +40,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
               borderColor={"red"}
               gap={3}
               sx={{
-                  padding: "3rem",
-                  paddingLeft: "3rem",
-                  paddingRight: "3rem",
+                  padding: "2rem",
                   borderRadius: "3.5rem",
                   border: "0.5px solid #e5e7ff",
                   background: `${bgColor}`,
@@ -52,17 +50,30 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
 
             <Grid container item xs={12}>
                 <Grid item xs={12}>
-                    <Typography lineHeight={1.1} fontSize={"2rem"} fontWeight={"bold"}
-                                color={`${textColor}`}>{school}</Typography>
+                    <Typography lineHeight={1.1}
+                                fontSize={"2rem"}
+                                fontWeight={"bold"}
+                                color={`${textColor}`}
+                    >
+                        {school}
+                    </Typography>
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Typography fontSize={"0.8rem"} fontWeight={"bold"}
-                                color={`${textColor}`}>{schoolGrade}</Typography>
+                    <Typography fontSize={"0.8rem"}
+                                fontWeight={"bold"}
+                                color={`${textColor}`}
+                    >
+                        {schoolGrade}
+                    </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography fontSize={"0.6rem"} fontStyle={"italic"}
-                                color={`${textColor}`}>{schoolAddr}</Typography>
+                    <Typography fontSize={"0.6rem"}
+                                fontStyle={"italic"}
+                                color={`${textColor}`}
+                    >
+                        {schoolAddr}
+                    </Typography>
                 </Grid>
 
             </Grid>

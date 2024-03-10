@@ -36,12 +36,15 @@ const ExperienceCard = (props: EducationCardProps) => {
         switch (props.job) {
             case 1:
                 return (
-                    <Grid item container xs={12} gap={2}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/spring_boot.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/java.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/cassandra.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/jira.svg"}/>
@@ -53,7 +56,7 @@ const ExperienceCard = (props: EducationCardProps) => {
                 );
             case 2:
                 return (
-                    <Grid item container xs={12} gap={2}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/java.svg"}/>
                         </Grid>
@@ -66,16 +69,22 @@ const ExperienceCard = (props: EducationCardProps) => {
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/iot.svg"}/>
                         </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/bash.svg"}/>
+                        </Grid>
                     </Grid>
                 );
             case 3:
                 return (
-                    <Grid item container xs={12} gap={2}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
                         <Grid item xs={'auto'}>
-                            <StackIcon img={"assets/stack/tutor.svg"}/>
+                            <StackIcon img={"assets/avatar/avatar.png"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/java.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/bash.svg"}/>
                         </Grid>
                     </Grid>
                 );
@@ -84,16 +93,16 @@ const ExperienceCard = (props: EducationCardProps) => {
     }
 
     return (
-        <Grid container item xs={12} gap={{xs: 4, sm: 4, md: 10}} justifyContent={"center"} alignItems={"center"}>
+        <Grid container item xs={12} gap={{xs: 4, sm: 4, md: 10}} justifyContent={"center"} alignItems={"center"}
+        >
             <Grid item container
                   order={props.job === 2 ? 2 : 1}
-                  xs={11}
+                  xs={12}
                   sm={11}
                   md={5}
                   sx={{
-                      padding: "3rem",
-                      paddingRight: "3rem",
-                      borderRadius: "3.5rem",
+                      padding: "2rem",
+                      borderRadius: "3rem",
                       border: "0.5px solid #e5e7ff",
                       background: "radial-gradient(50% 50% at 50% 50%, rgba(209, 216, 255, 0.20) 0%, rgba(224, 229, 255, 0.20) 100%)",
                       backdropFilter: "blur(12.699999809265137px)"
@@ -125,34 +134,33 @@ const ExperienceCard = (props: EducationCardProps) => {
                         {props.description}
                     </Typography>
                 </Grid>
-                <Grid container item xs={12} justifyContent="space-between">
-                    <Grid item container xs={'auto'}>
+                <Grid container item xs={12} justifyContent="space-between" gap={2}>
+                    <Grid item container xs={12}>
                         {stack()}
                     </Grid>
                     {isScreenLowerThanMD &&
-                        <Grid item xs={'auto'}>
-                            <Box component="img"
-                                 src={props.url}
-                                 sx={{
-                                     objectFit: "cover",
-                                     clipPath: `path('${svgPathLittle}')`,
-                                     width: "4rem",
-                                     height: "4rem",
-                                     transition: "transform 0.3s ease-in-out",
-                                     "&:hover": {
-                                         transform: "scale(1.1)",
-                                     },
-                                 }}/>
+                        <Grid container item xs={12} direction="row-reverse">
+                            <Grid item xs={'auto'}>
+                                <Box component="img"
+                                     src={props.url}
+                                     sx={{
+                                         objectFit: "cover",
+                                         clipPath: `path('${svgPathLittle}')`,
+                                         width: "4rem",
+                                         height: "4rem",
+                                         transition: "transform 0.3s ease-in-out",
+                                         "&:hover": {
+                                             transform: "scale(1.1)",
+                                         },
+                                     }}/>
+                            </Grid>
                         </Grid>
                     }
                 </Grid>
 
             </Grid>
             {!isScreenLowerThanMD &&
-
-                <Grid item xs={'auto'}
-                      order={props.job === 2 ? 1 : 2}
-                >
+                <Grid item xs={'auto'} order={props.job === 2 ? 1 : 2}>
                     <Box component="img"
                          src={props.url}
                          alt={""}

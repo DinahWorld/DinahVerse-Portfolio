@@ -1,24 +1,27 @@
 import React from "react";
-import {Box, Divider, Grid, Typography} from "@mui/material";
+import {Box, Divider, Grid, Typography, useMediaQuery} from "@mui/material";
+import theme from "../../../theme";
 
 const Footer = () => {
+    const isScreenSmallerThanSM = useMediaQuery(theme.breakpoints.down('sm'));
+
     return (
         <Grid container sx={{marginTop: "8rem"}} justifyContent={"center"} alignItems={"center"}>
             <Grid item container xs={12}
                   sx={{
-                      height: "60vh",
-                      backgroundColor: "#000018"
+                      height: "100vh",
+                      backgroundColor: "#000018",
                   }}
             >
-                <Grid container xs={12} justifyContent={"center"} alignItems={"center"} gap={2}>
-                    <Grid item container xs={'auto'} gap={2} direction={"column"}>
+                <Grid container xs={12} justifyContent={"center"} alignItems={"center"} columnGap={8}>
+                    <Grid item container xs={'auto'} gap={1} direction={"column"}>
                         <Grid item container xs={'auto'} gap={1} direction={"column"}>
                             <Grid item container xs={'auto'}>
-                                <Typography fontWeight={"bold"} fontSize={"2.8rem"} color={"white"} lineHeight={1.3}>
-                                    Contact Me
+                                <Typography fontWeight={"bold"} fontSize={"2rem"} color={"white"} lineHeight={1.3}>
+                                    LET’S TALK !
                                 </Typography>
                                 <Grid item xs={12}>
-                                    <Divider sx={{bgcolor: "white", borderBottomWidth: 9}}/>
+                                    <Divider sx={{bgcolor: "white", borderBottomWidth: 5}}/>
                                 </Grid>
                             </Grid>
                             <Grid item xs={'auto'}>
@@ -30,8 +33,8 @@ const Footer = () => {
                         <Grid item container xs={'auto'} gap={1}>
                             <Grid container alignItems={"center"} justifyContent={"center"}
                                   sx={{
-                                      width: "2.5rem",
-                                      height: "2.5rem",
+                                      width: "2.4rem",
+                                      height: "2.4rem",
                                       padding: "0.6rem",
                                       borderRadius: "0.8rem",
                                       backgroundColor: "white",
@@ -45,8 +48,8 @@ const Footer = () => {
                             </Grid>
                             <Grid container alignItems={"center"} justifyContent={"center"}
                                   sx={{
-                                      width: "2.5rem",
-                                      height: "2.5rem",
+                                      width: "2.4rem",
+                                      height: "2.4rem",
                                       padding: "0.6rem",
                                       borderRadius: "0.8rem",
                                       backgroundColor: "white",
@@ -61,9 +64,11 @@ const Footer = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item container xs={'auto'}>
-                        <Box component={"img"} src={"assets/avatar/Dinath.png"} style={{width: "100%"}}/>
-                    </Grid>
+                    {!isScreenSmallerThanSM &&
+                        <Grid item container xs={'auto'}>
+                            <Box component={"img"} src={"assets/avatar/Dinath.png"} style={{width: "100%"}}/>
+                        </Grid>
+                    }
 
                 </Grid>
             </Grid>

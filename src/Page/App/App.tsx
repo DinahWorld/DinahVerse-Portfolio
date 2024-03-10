@@ -5,7 +5,7 @@ import AboutMe from "Components/SubPage/AboutMe";
 import Education from "Components/SubPage/Education";
 import Experience from "Components/SubPage/Experience";
 import PersonalProject from "Components/SubPage/PersonalProject";
-import Footer from "../../Components/SubPage/Footer";
+import Footer from "Components/SubPage/Footer";
 
 
 const App = () => {

@@ -8,8 +8,8 @@ interface StackProps {
 const StackIcon = (props: StackProps) => {
     return (
         <Grid container alignItems={"center"} justifyContent={"center"} sx={{
-            width: "4rem",
-            height: "4rem",
+            width: "3.8rem",
+            height: "3.8rem",
             padding: "0.8rem",
             borderRadius: "1.4rem",
             border: "1px solid #e5e7ff",

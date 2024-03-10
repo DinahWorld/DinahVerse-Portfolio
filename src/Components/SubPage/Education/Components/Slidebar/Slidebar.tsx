@@ -73,7 +73,8 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
                       className={"progress-bar"}
                       sx={{
                           backgroundColor: `${mainColor}`,
-                          borderRadius: "3.5rem"
+                          borderRadius: "3.5rem",
+                          padding: "3px"
                       }}
                 >
                     <div style={{

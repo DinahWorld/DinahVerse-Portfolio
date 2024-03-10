@@ -23,7 +23,6 @@ const ProjectCard = (props: ProjectCardProps) => {
               alignItems={"center"}
               direction="column"
               gap={2}
-
         >
             <Grid item container xs={'auto'}
                   direction="column"
