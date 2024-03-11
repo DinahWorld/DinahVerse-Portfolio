@@ -13,6 +13,27 @@ url('fonts/Kotor/KotoriRose-Bold.otf');
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Qeldorat';
+    src: url('fonts/Qeldorat/Qeldorat.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qeldorat';
+    src: url('fonts/Qeldorat/Qeldorat-italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bright';
+    src: url('fonts/Bright/Bright.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     scroll-behavior: smooth;
     background-color: #F0F1FA;
