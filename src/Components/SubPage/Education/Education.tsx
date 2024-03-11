@@ -9,19 +9,20 @@ import theme from "../../../theme";
 
 const Education = () => {
     const [progressBarLength, setProgressBarLength] = useState<number>(0);
+    const [imageNumber, setImageNumber] = useState<number>(1);
     const ref = React.useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
         offset: ["100vh end", "end 100%"],
     });
     const progressBar = document.querySelector('#root')
-
     const [hookedYPosition, setHookedYPosition] = React.useState(0);
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         // @ts-ignore
         setHookedYPosition(latest * (progressBar.offsetWidth * 0.6));
         // @ts-ignore
         setProgressBarLength(progressBar.offsetWidth * 0.6);
+        setImageNumber(hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1));
     })
 
     const isScreenSmallerThanMD = useMediaQuery(theme.breakpoints.down('md'));
@@ -38,6 +39,7 @@ const Education = () => {
                       position: "sticky",
                       height: "100vh",
                       top: "-1px",
+                      zIndex: "-1",
                       backgroundImage: "url(assets/my-noise.png)",
                   }}
             >
@@ -61,21 +63,20 @@ const Education = () => {
                             <Grid item container justifyContent={"center"} gap={6} alignItems={"flex-end"}>
                                 <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
-                                    <Grid item xs={12}>
-                                        <Typography
-                                            fontFamily={"Bright"}
-                                            fontWeight={"bold"}
-                                            sx={{
-                                                fontSize: {
-                                                    xs: "3.2rem",
-                                                    sm: "5rem",
-                                                    md: "5.6rem",
-                                                    lg: "6rem",
-                                                    xl: "6rem"
-                                                }
-                                            }}
+                                    <Grid item xs={'auto'}>
+                                        <Typography fontFamily={"Bright"}
+                                                    color={imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")}
+                                                    sx={{
+                                                        fontSize: {
+                                                            xs: "3.2rem",
+                                                            sm: "5rem",
+                                                            md: "5.6rem",
+                                                            lg: "6rem",
+                                                            xl: "6rem"
+                                                        }
+                                                    }}
                                         >
-                                            Education
+                                            Education.
                                         </Typography>
                                     </Grid>
                                     {isScreenSmallerThanMD &&
@@ -83,13 +84,11 @@ const Education = () => {
                                         </>
                                     }
                                     {!isScreenSmallerThanMD &&
-                                        <EducationInfo
-                                            imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                        <EducationInfo imageNumber={imageNumber}/>
                                     }
                                 </Grid>
                                 <Grid item xs={'auto'}>
-                                    <EducationProfile
-                                        imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                    <EducationProfile imageNumber={imageNumber}/>
                                 </Grid>
                             </Grid>
 
@@ -98,14 +97,12 @@ const Education = () => {
                                           second={progressBarLength * 0.75}
                                           length={progressBarLength}
                                           hookedYPosition={hookedYPosition}
-                                          imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                          imageNumber={imageNumber}/>
                             </Grid>
 
                         </Grid>
                         {isScreenSmallerThanMD &&
-                            <EducationInfo
-                                imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
-
+                            <EducationInfo imageNumber={imageNumber}/>
                         }
                     </Grid>
                 </Grid>

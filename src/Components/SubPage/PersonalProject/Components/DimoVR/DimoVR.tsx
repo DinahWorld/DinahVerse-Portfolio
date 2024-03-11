@@ -18,8 +18,8 @@ const DimoVR = () => {
                 <Grid item xs={'auto'}>
                     <Box component={"img"} src={"assets/background/kda.png"} alt={""}
                          sx={{
-                             width: "26rem",
-                             height: "16rem",
+                             width: {xs: "22rem", sm: "30rem", md: "40vw", lg: "40vw", xl: "36rem"},
+                             height: {xs: "16rem", sm: "24rem", md: "24rem"},
                              borderRadius: "3rem"
                          }}/>
                 </Grid>
@@ -27,12 +27,13 @@ const DimoVR = () => {
                       sx={{
                           position: "absolute",
                           height: "100%",
-                          top: "-20%",
-                          left: "-5%"
+                          top: {xs: "-12%", sm: "-20%", md: "-20%"},
+                          left: "-10%"
                       }}>
                     <Box component={"img"} src={"assets/avatar/DimoVR.png"} alt={""}
-                         style={{
-                             width: "22rem",
+                         sx={{
+                             zIndex: "1",
+                             width: {xs: "20rem", sm: "32rem", md: "32rem"},
                              borderRadius: "3rem"
                          }}/>
                 </Grid>

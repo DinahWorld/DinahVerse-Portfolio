@@ -93,8 +93,7 @@ const ExperienceCard = (props: EducationCardProps) => {
     }
 
     return (
-        <Grid container item xs={12} gap={{xs: 4, sm: 4, md: 10}} justifyContent={"center"} alignItems={"center"}
-        >
+        <Grid container item xs={12} gap={{xs: 4, sm: 4, md: 10}} justifyContent={"center"} alignItems={"center"}>
             <Grid item container
                   order={props.job === 2 ? 2 : 1}
                   xs={12}
@@ -128,9 +127,7 @@ const ExperienceCard = (props: EducationCardProps) => {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Typography fontSize={"0.7rem"} sx={{
-                        whiteSpace: "break-spaces"
-                    }}>
+                    <Typography fontSize={"0.7rem"} sx={{whiteSpace: "break-spaces"}}>
                         {props.description}
                     </Typography>
                 </Grid>

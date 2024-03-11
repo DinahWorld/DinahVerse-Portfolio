@@ -1,7 +1,6 @@
 {
   "name": "dinahverse",
   "version": "0.1.0",
-  "homepage": "https://dinahworld.github.io/DinahVerse-Portfolio",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.3",

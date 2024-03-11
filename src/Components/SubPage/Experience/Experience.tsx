@@ -9,30 +9,28 @@ const Experience = () => {
                 <img src={"assets/snake/snake-2.svg"} alt={""} style={{width: "100%"}}/>
             </Grid>
             <Grid container item gap={10} xs={11}>
-
                 <Grid container item xs={12}>
                     <Grid item xs={12}>
                         <Typography
                             fontFamily={"Bright"}
-                            lineHeight={1.2}
-                            fontWeight={"bold"}
-                            sx={{
-                                fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
-                            }}
+                            lineHeight={1}
+                            color={"#8f85b5"}
+                            sx={{fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
                         >
                             Experience.
                         </Typography>
                     </Grid>
-                    <Grid item xs={9}>
-                        <Typography fontSize={"0.8rem"}>
-                            Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar
-                            eget.
-                            Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae
-                            auctor
-                            enim. Elit massa orci nullam cras tristique nunc phasellus blandit.</Typography>
+                    <Grid item xs={6}>
+                        <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
+                                    color={"#8f85b5"}
+                        >
+                            I've gained practical software development experience through apprenticeships and
+                            internships,
+                            working on back-end and front-end projects in Java, JavaFX, and Spring Boot.
+                        </Typography>
                     </Grid>
                 </Grid>
-                <Grid container item xs={12} gap={22} justifyContent={"center"} alignItems={"center"}>
+                <Grid container item xs={12} gap={10} justifyContent={"center"} alignItems={"center"}>
                     <ExperienceCard
                         job={1}
                         url={"assets/experience/bnp.png"}
@@ -45,7 +43,8 @@ const Experience = () => {
                             "significant volumes of data for Business Analytics (BA).\n\n" +
                             "- My responsibilities encompass the implementation of new controllers and services, troubleshooting " +
                             "production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
-                            "- Additionally, I have contributed to DevOps activities using Jenkins"}
+                            "- Additionally, I have contributed to DevOps activities using Jenkins"
+                        }
                     />
                     <ExperienceCard
                         job={2}

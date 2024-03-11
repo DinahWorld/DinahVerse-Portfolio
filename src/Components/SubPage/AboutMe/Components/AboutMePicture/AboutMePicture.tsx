@@ -50,13 +50,14 @@ const AboutMePicture = () => {
                         <Typography color={"white"}
                                     fontSize={"1.8rem"}
                                     fontWeight={"bold"}
+                                    lineHeight={1}
                         >
                             SUNTHARARAJAH
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography color={"white"}
-                                    fontSize={"1.6rem"}
+                                    fontSize={"1.7rem"}
                                     fontWeight={"bold"}
                         >
                             Dinath

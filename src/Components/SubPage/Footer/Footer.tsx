@@ -35,8 +35,8 @@ const Footer = () => {
                                 <motion.button
                                     onClick={() => window.open('https://linkedin.com/in/dinath-sh')}
                                     animate={{
-                                        width: "3rem",
-                                        height: "3rem",
+                                        width: "3.2rem",
+                                        height: "3.2rem",
                                         padding: "0.6rem",
                                         borderRadius: "0.8rem",
                                         backgroundColor: "white",
@@ -55,8 +55,8 @@ const Footer = () => {
                                 <motion.button
                                     onClick={() => window.open('https://github.com/DinahWorld')}
                                     animate={{
-                                        width: "3rem",
-                                        height: "3rem",
+                                        width: "3.2rem",
+                                        height: "3.2rem",
                                         padding: "0.6rem",
                                         borderRadius: "0.8rem",
                                         backgroundColor: "white",

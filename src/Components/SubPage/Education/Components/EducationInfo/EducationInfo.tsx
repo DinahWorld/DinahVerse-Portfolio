@@ -11,14 +11,17 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
     let schoolAddr = "";
     let schoolGrade = "";
     let textColor = "";
+    let schoolDesc = "";
 
     switch (imageNumber) {
         case 1:
             textColor = "#5D68FF"
-            schoolGrade = "A levels"
+            schoolGrade = "French Baccalaureat"
             schoolAddr = "Le Blanc-Mesnil, Paris, France"
             school = "Lycee W.A Mozart";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(209, 216, 255, 0.20) 0%, rgba(224, 229, 255, 0.20) 100%)";
+            schoolDesc = "I earned my French Baccalaureat Scientifique with a specialization in computer science, " +
+                "demonstrating a strong foundation for software development for information technology."
             break;
         case 2:
             textColor = "#FF5D5D";
@@ -26,6 +29,8 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Saint-Denis, Paris, France"
             school = "Universite Paris VIII";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 209, 209, 0.20) 0%, rgba(255, 224, 224, 0.20) 100%)";
+            schoolDesc = "I graduated with a Licence in Computer Science from Universite Paris VIII, gaining a solid " +
+                "foundation in software development and algorithms."
             break;
         case 3:
             textColor = "#0F1727";
@@ -33,6 +38,8 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Paris, France"
             school = "Epitech Technology";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.20) 0%, rgba(199, 199, 199, 0.20) 100%)";
+            schoolDesc = "Epitech Paris Master's in Computer Science program, combined with my work-study experience, " +
+                "has prepared me to become a highly skilled and adaptable software engineer."
             break;
     }
     return (
@@ -68,7 +75,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography fontSize={"0.6rem"}
+                    <Typography fontSize={"0.7rem"}
                                 fontStyle={"italic"}
                                 color={`${textColor}`}
                     >
@@ -80,11 +87,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
 
             <Grid item xs={12}>
                 <Typography fontSize={"0.8rem"}>
-                    Lorem ipsum dolor sit amet consectetur. Convallis
-                    et
-                    sed at
-                    commodo nulla pulvinar eget. Varius consequat interdum platea lacus dictum
-                    integer.
+                    {schoolDesc}
                 </Typography>
             </Grid>
         </Grid>

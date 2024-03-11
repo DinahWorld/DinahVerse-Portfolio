@@ -5,31 +5,46 @@ import React from "react";
 const AboutMeInfo = () => {
     return (
         <>
-            <Grid container item xs={12}>
+            <Grid container item xs={12} gap={2}>
                 <Grid item xs={12}>
                     <Typography fontWeight={"bold"} fontSize={"1.8rem"}>Hi, I’m Dinath 👋🏾</Typography>
                 </Grid>
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
-                        <Typography fontSize={"0.8rem"} color={"#"}>
-                            Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget.
-                            Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae
-                            auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit.
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
                         <Typography fontSize={"0.8rem"}>
-                            Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar eget.
-                            Varius consequat interdum platea lacus dictum integer. Id mauris duis parturient vitae
-                            auctor enim. Elit massa orci nullam cras tristique nunc phasellus blandit.
+                            <strong>I am Dinath Sunthararajah, a 22-year-old </strong>driven by an insatiable passion
+                            for
+                            technology and
+                            innovation. Based in Paris, France, I have embraced a journey filled with challenges,
+                            fueled
+                            by a deep belief in the power of technological progress to transform the
+                            world. <br/><br/>
+                            <strong>Currently honing my skills and gaining valuable experience</strong>, I work as an
+                            apprentice
+                            back-end
+                            developer at BNP Paribas CIB.
+                            <br/><br/>
+                            <strong>Starting from October 2024,</strong> I am embarking on a new chapter in my
+                            professional journey
+                            by
+                            seeking a VIE (Volontariat International en Entreprise) opportunity. This program will
+                            allow
+                            me to broaden my horizons by immersing myself in a new culture and contributing to
+                            meaningful projects.
+                            <br/><br/>
+                            <strong>Beyond the technological realm,</strong> I am an enthusiastic traveler, captivated
+                            by the richness of
+                            cultures and the beauty of Asian music.
                         </Typography>
                     </Grid>
                 </Grid>
             </Grid>
             <Grid container item xs={12} sm gap={2}>
                 <Grid item xs={12}>
-                    <Typography fontSize={"1.2rem"}>
-                        Stack
+                    <Typography fontSize={"1.2rem"}
+                                fontWeight={"bold"}
+                    >
+                        Skills
                     </Typography>
                 </Grid>
                 <Grid container item xs={12} gap={1} justifyContent={"start"} alignItems={"center"}>
@@ -73,13 +88,19 @@ const AboutMeInfo = () => {
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/bash.svg"}/>
                     </Grid>
-
-
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/unity.svg"}/>
+                    </Grid>
+                    <Grid item xs={'auto'}>
+                        <StackIcon img={"assets/stack/blender.svg"}/>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid container item xs={12} gap={1}>
                 <Grid item xs={12}>
-                    <Typography fontSize={"1.2rem"}>
+                    <Typography fontSize={"1.2rem"}
+                                fontWeight={"bold"}
+                    >
                         Languages
                     </Typography>
                 </Grid>

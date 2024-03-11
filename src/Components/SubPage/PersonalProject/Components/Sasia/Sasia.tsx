@@ -8,14 +8,15 @@ const Sasia = () => {
               justifyContent={"center"}
               alignItems={"center"}
               gap={2}
-
+              sx={{
+                  zIndex: "-1"
+              }}
         >
             <Grid item container xs={'auto'}
                   position="relative"
-
                   sx={{
-                      width: "26rem",
-                      height: "16rem",
+                      width: {xs: "22rem", sm: "30rem", md: "40vw", lg: "40vw", xl: "36rem"},
+                      height: {xs: "16rem", sm: "24rem", md: "24rem",},
                       borderRadius: "3rem",
                       backgroundColor: "#FFDCC7"
                   }}
@@ -25,21 +26,17 @@ const Sasia = () => {
                           position: "absolute",
                           height: "100%",
                           top: "-10%",
-                          left: "-20%"
+                          left: {xs: "-16%", sm: "-20%", md: "-20%"},
                       }}>
-                    <Box component="img" src={"assets/avatar/flower.png"} alt={""}
-                         sx={{
-                             width: "21rem",
-                             borderRadius: "3rem"
-                         }}/>
+
                 </Grid>
-                <img src={"assets/avatar/Sasia.png"} alt={""}
-                     style={{
+                <Box component={"img"} src={"assets/avatar/Sasia.png"} alt={""}
+                     sx={{
                          borderRadius: "3rem",
                          objectPosition: "right",
-                         width: "26rem",
-                         height: "16rem",
-                         objectFit: "contain"
+                         width: {xs: "22rem", sm: "38rem", md: "100%", lg: "36rem"},
+                         height: {xs: "16rem", sm: "24rem", md: "24rem", lg: "24rem"},
+                         objectFit: "cover"
                      }}
                 />
             </Grid>

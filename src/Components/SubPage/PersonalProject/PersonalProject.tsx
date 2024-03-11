@@ -22,26 +22,27 @@ const PersonalProject = () => {
                     >
                         <Grid item container
                               xs={12}
-                              alignItems={"center"}
+                              alignItems={"flex-end"}
                         >
-                            <Grid item xs={12}>
-                                <Typography
-                                    fontFamily={"Bright"}
-                                    lineHeight={1.2}
-                                    fontWeight={"bold"}
-                                    sx={{
-                                        fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
-                                    }}
+                            <Grid item xs>
+                                <Typography color={"#4A42A9"}
+                                            lineHeight={1}
+                                            fontFamily={"Bright"}
+                                            sx={{
+                                                fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
+                                            }}
                                 >
-                                    Personal Project
+                                    Personal <br/> Project
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} sm={9}>
-                                <Typography fontSize={"0.8rem"}>
-                                    Lorem ipsum dolor sit amet consectetur. Convallis et sed at commodo nulla pulvinar
-                                    eget. Varius consequat interdum platea lacus dictum integer. Id mauris duis
-                                    parturient vitae auctor enim. Elit massa orci nullam cras tristique nunc phasellus
-                                    blandit.
+                            <Grid item xs={12} md={4}>
+                                <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
+                                            color={"#4A42A9"}
+                                >
+                                    Dimovr, an ambitious school project, allows me to hone my skills in leadership and
+                                    project management. Alongside this, I'm passionately pursuing Sasia, a personal
+                                    project that lets me explore full-stack development and develop my abilities in
+                                    back-end, front-end, design, and DevOps.
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -64,7 +65,8 @@ const PersonalProject = () => {
 
                 >
                     <Grid item xs={'auto'}>
-                        <Typography fontWeight={"bold"} fontSize={"3rem"}>
+                        <Typography fontFamily={"Bright"}
+                                    fontSize={{xs: "2rem", sm: "2rem", md: "3rem"}}>
                             Other Projects
                         </Typography>
                     </Grid>

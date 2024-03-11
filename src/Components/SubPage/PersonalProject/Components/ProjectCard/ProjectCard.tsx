@@ -29,9 +29,8 @@ const ProjectCard = (props: ProjectCardProps) => {
                   position="relative"
             >
                 <Grid item xs={'auto'}>
-                    <Box component={"img"} src={props.img} style={{
-                        width: "26rem",
-                        height: "16rem",
+                    <Box component={"img"} src={props.img} sx={{
+                        width: {xs: "26rem", sm: "26rem", md: "26rem"},
                         clipPath: `path('${svgPath}')`,
                         borderRadius: "3rem"
                     }}/>

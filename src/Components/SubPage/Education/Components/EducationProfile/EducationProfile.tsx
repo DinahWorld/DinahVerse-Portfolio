@@ -61,6 +61,7 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
                   backgroundImage: `${bgImg}`,
                   backgroundSize: "cover",
               }}>
+
             <Box component="img" sx={imgSx} src={imagePath}/>
         </Grid>
     );
