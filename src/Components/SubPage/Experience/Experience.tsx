@@ -13,13 +13,14 @@ const Experience = () => {
                 <Grid container item xs={12}>
                     <Grid item xs={12}>
                         <Typography
+                            fontFamily={"Bright"}
                             lineHeight={1.2}
                             fontWeight={"bold"}
                             sx={{
                                 fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
                             }}
                         >
-                            Experience
+                            Experience.
                         </Typography>
                     </Grid>
                     <Grid item xs={9}>

@@ -43,7 +43,7 @@ const DimoVR = () => {
                   alignItems={"center"}
             >
                 <Grid item xs={'auto'}>
-                    <Typography fontSize={"0.5rem"}>
+                    <Typography fontSize={"0.6rem"}>
                         UNITY - BLENDER - VUEJS - SPRING BOOT - POSTGRESQL - FIGMA
                     </Typography>
                 </Grid>

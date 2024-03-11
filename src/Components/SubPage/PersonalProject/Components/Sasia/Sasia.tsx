@@ -51,7 +51,7 @@ const Sasia = () => {
             >
 
                 <Grid item xs={'auto'}>
-                    <Typography fontSize={"0.5rem"}>
+                    <Typography fontSize={"0.6rem"}>
                         REACTJS - SPRING BOOT - DEVOPS - POSTGRESQL - FIGMA
                     </Typography>
                 </Grid>

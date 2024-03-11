@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import {Grid, Typography} from "@mui/material";
+import {Grid, Typography, useMediaQuery} from "@mui/material";
 import EducationProfile from "Components/SubPage/Education/Components/EducationProfile/EducationProfile";
 import {useMotionValueEvent, useScroll} from "framer-motion"
 import EducationInfo from "./Components/EducationInfo";
 import Slidebar from "./Components/Slidebar";
+import theme from "../../../theme";
 
 
 const Education = () => {
@@ -23,6 +24,7 @@ const Education = () => {
         setProgressBarLength(progressBar.offsetWidth * 0.6);
     })
 
+    const isScreenSmallerThanMD = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <Grid item container xs={12}
@@ -46,6 +48,7 @@ const Education = () => {
                     <Grid container item xs={12}
                           alignItems={"center"}
                           sx={{height: "100%", padding: "10px"}}
+                          gap={2}
                     >
 
                         <Grid item container xs={12}
@@ -59,22 +62,30 @@ const Education = () => {
                                 <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
                                     <Grid item xs={12}>
-                                        <Typography fontWeight={"bold"}
-                                                    sx={{
-                                                        fontSize: {
-                                                            xs: "3.2rem",
-                                                            sm: "5rem",
-                                                            md: "5.6rem",
-                                                            lg: "6rem",
-                                                            xl: "6rem"
-                                                        }
-                                                    }}
+                                        <Typography
+                                            fontFamily={"Bright"}
+                                            fontWeight={"bold"}
+                                            sx={{
+                                                fontSize: {
+                                                    xs: "3.2rem",
+                                                    sm: "5rem",
+                                                    md: "5.6rem",
+                                                    lg: "6rem",
+                                                    xl: "6rem"
+                                                }
+                                            }}
                                         >
                                             Education
                                         </Typography>
                                     </Grid>
-                                    <EducationInfo
-                                        imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                    {isScreenSmallerThanMD &&
+                                        <>
+                                        </>
+                                    }
+                                    {!isScreenSmallerThanMD &&
+                                        <EducationInfo
+                                            imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+                                    }
                                 </Grid>
                                 <Grid item xs={'auto'}>
                                     <EducationProfile
@@ -89,7 +100,13 @@ const Education = () => {
                                           hookedYPosition={hookedYPosition}
                                           imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
                             </Grid>
+
                         </Grid>
+                        {isScreenSmallerThanMD &&
+                            <EducationInfo
+                                imageNumber={hookedYPosition > progressBarLength * 0.75 ? 3 : (hookedYPosition > progressBarLength * 0.25 ? 2 : 1)}/>
+
+                        }
                     </Grid>
                 </Grid>
             </Grid>

@@ -25,11 +25,13 @@ const PersonalProject = () => {
                               alignItems={"center"}
                         >
                             <Grid item xs={12}>
-                                <Typography lineHeight={1.2}
-                                            fontWeight={"bold"}
-                                            sx={{
-                                                fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
-                                            }}
+                                <Typography
+                                    fontFamily={"Bright"}
+                                    lineHeight={1.2}
+                                    fontWeight={"bold"}
+                                    sx={{
+                                        fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}
+                                    }}
                                 >
                                     Personal Project
                                 </Typography>

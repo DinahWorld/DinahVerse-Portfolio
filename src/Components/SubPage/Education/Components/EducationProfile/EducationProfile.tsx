@@ -30,7 +30,7 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
             imagePath = "assets/aboutMe/young.png";
             imgSx = {
                 position: "absolute",
-                width: "110%",
+                width: "100%",
                 bottom: "-2px",
                 left: "10%"
             }
@@ -51,15 +51,16 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
 
     return (
 
-        <Grid container sx={{
-            width: {xs: 300, sm: 300, md: 300, lg: 400, xl: 400},
-            height: {xs: 300, sm: 300, md: 300, lg: 500, xl: 500},
-            position: "relative",
-            backgroundColor: `${bgColor}`,
-            borderRadius: "5rem",
-            backgroundImage: `${bgImg}`,
-            backgroundSize: "cover",
-        }}>
+        <Grid item container
+              sx={{
+                  width: {xs: 300, sm: 300, md: 300, lg: 400, xl: 400},
+                  height: {xs: 300, sm: 300, md: 300, lg: 500, xl: 500},
+                  position: "relative",
+                  backgroundColor: `${bgColor}`,
+                  borderRadius: "5rem",
+                  backgroundImage: `${bgImg}`,
+                  backgroundSize: "cover",
+              }}>
             <Box component="img" sx={imgSx} src={imagePath}/>
         </Grid>
     );
