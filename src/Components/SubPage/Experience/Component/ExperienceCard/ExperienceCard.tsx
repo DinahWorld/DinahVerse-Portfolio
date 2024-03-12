@@ -115,7 +115,7 @@ const ExperienceCard = (props: EducationCardProps) => {
                                 visible: {opacity: 1},
                                 hidden: {opacity: 0}
                             }}>
-                    <Grid item container xs={12}>
+                    <Grid item container xs={12} sx={{marginBottom : "2rem"}}>
                         <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
                             <Grid item xs={9}>
                                 <Typography lineHeight={1.1} fontSize={"1.3rem"} fontWeight={"bold"}>
@@ -132,10 +132,6 @@ const ExperienceCard = (props: EducationCardProps) => {
                                                  clipPath: `path('${svgPathLittle}')`,
                                                  width: "4rem",
                                                  height: "4rem",
-                                                 transition: "transform 0.3s ease-in-out",
-                                                 "&:hover": {
-                                                     transform: "scale(1.1)",
-                                                 },
                                              }}/>
                                     </Grid>
                                 </Grid>
@@ -143,12 +139,12 @@ const ExperienceCard = (props: EducationCardProps) => {
                         </Grid>
 
                         <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.8rem"}>
+                            <Typography lineHeight={1.1} fontSize={"0.8rem"} fontWeight={"bold"}>
                                 {props.company}
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.6rem"} fontStyle={"italic"}>
+                            <Typography lineHeight={1.1} fontSize={"0.6rem"} fontStyle={"italic"}  fontWeight={"bold"}>
                                 {props.date}
                             </Typography>
                         </Grid>
