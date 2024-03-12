@@ -16,11 +16,11 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
     switch (imageNumber) {
         case 1:
             textColor = "#5D68FF"
-            schoolGrade = "French Baccalaureat"
+            schoolGrade = "High School Diploma"
             schoolAddr = "Le Blanc-Mesnil, Paris, France"
             school = "Lycee W.A Mozart";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(209, 216, 255, 0.20) 0%, rgba(224, 229, 255, 0.20) 100%)";
-            schoolDesc = "I earned my French Baccalaureat Scientifique with a specialization in computer science, " +
+            schoolDesc = "I earned my High School Diploma with a specialization in computer science, " +
                 "demonstrating a strong foundation for software development for information technology."
             break;
         case 2:
@@ -29,7 +29,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Saint-Denis, Paris, France"
             school = "Universite Paris VIII";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 209, 209, 0.20) 0%, rgba(255, 224, 224, 0.20) 100%)";
-            schoolDesc = "I graduated with a Licence in Computer Science from Universite Paris VIII, gaining a solid " +
+            schoolDesc = "I graduated with a Bachelor in Computer Science from Universite Paris VIII, gaining a solid " +
                 "foundation in software development and algorithms."
             break;
         case 3:
