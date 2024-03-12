@@ -24,7 +24,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <motion.div initial="hidden"
                     whileInView="visible"
                     viewport={{once: true}}
-                    transition={{type: "spring", stiffness: 100, damping: 10}}
+                    transition={{type: "spring", stiffness: 200, damping: 10}}
                     animate={{
                         cursor: "pointer"
                     }}
@@ -32,7 +32,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                         visible: {scale: 0.9, rotate: 0},
                         hidden: {scale: 0, rotate: props.number === 1 ? -10 : 10}
                     }}
-                    whileHover={{scale: 1.1}}
+                    whileHover={{scale: 1}}
                     whileTap={{scale: 0.9}}
                     onClick={() => window.open(props.url)}
         >

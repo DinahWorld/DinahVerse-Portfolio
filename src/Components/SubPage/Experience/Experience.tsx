@@ -5,29 +5,33 @@ import ExperienceCard from "../Experience/Component/ExperienceCard";
 const Experience = () => {
     return (
         <Grid container item xs={12} justifyContent={"center"} alignItems={"center"}>
-            <Grid item sx={{position: "absolute", zIndex: "-1"}} xs={12}>
-                <img src={"assets/snake/snake-2.svg"} alt={""} style={{width: "100%"}}/>
-            </Grid>
+
             <Grid container item gap={4} xs={11}>
-                <Grid container item xs={12}>
-                    <Grid item xs={12}>
+                <Grid item sx={{position: "absolute", zIndex: "-1", left: "0%"}} xs={12}>
+                    <img src={"assets/snake/snake-2.svg"} alt={""} style={{width: "100%"}}/>
+                </Grid>
+                <Grid container item xs={12} justifyContent={{xs: "center", sm: "start"}}>
+                    <Grid item xs={'auto'}>
                         <Typography
                             fontFamily={"Bright"}
                             lineHeight={1}
-                            color={"#8f85b5"}
+                            color={"#bdb0eb"}
                             sx={{fontSize: {xs: "3.8rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
                         >
                             Experience.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={6}>
-                        <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
-                                    color={"#8f85b5"}
-                        >
-                            I've gained practical software development experience through apprenticeships and
-                            internships,
-                            working on back-end and front-end projects in Java, JavaFX, and Spring Boot.
-                        </Typography>
+                    <Grid item xs={12}>
+                        <Grid item xs={12} sm={12} md={6}>
+
+                            <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
+                                        color={"#bdb0eb"}
+                            >
+                                I've gained practical software development experience through apprenticeships and
+                                internships,
+                                working on back-end and front-end projects in Java, JavaFX, and Spring Boot.
+                            </Typography>
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid container item xs={12} gap={10} justifyContent={"center"} alignItems={"center"}>

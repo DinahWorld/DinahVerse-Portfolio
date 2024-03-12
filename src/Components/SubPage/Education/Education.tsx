@@ -30,7 +30,7 @@ const Education = () => {
     return (
         <Grid item container xs={12}
               ref={ref}
-              sx={{height: "400vw", marginTop: "4rem", marginBottom: "4rem"}}
+              sx={{height: "400vw", marginTop: "4rem", marginBottom: "4rem", zIndex: "-3"}}
         >
             <Grid item container xs={12} className={"sticky-element"}
                   justifyContent={"center"}
@@ -71,7 +71,7 @@ const Education = () => {
                                                     color={imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")}
                                                     sx={{
                                                         fontSize: {
-                                                            xs: "3.8rem",
+                                                            xs: "4.2rem",
                                                             sm: "5rem",
                                                             md: "5.6rem",
                                                             lg: "6rem",

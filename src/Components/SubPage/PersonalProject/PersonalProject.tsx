@@ -8,7 +8,7 @@ const PersonalProject = () => {
 
     return (
 
-        <Grid container gap={5} sx={{marginTop: "10rem", marginBottom: "10rem"}}>
+        <Grid container gap={5} sx={{marginTop: "10rem"}}>
             <Grid container justifyContent={"center"}>
                 <Grid container item xs={11}
                       justifyContent={"center"}
@@ -31,7 +31,7 @@ const PersonalProject = () => {
                                             fontFamily={"Bright"}
                                             sx={{
                                                 fontSize: {
-                                                    xs: "3.8rem",
+                                                    xs: "4rem",
                                                     sm: "5rem",
                                                     md: "6rem",
                                                     lg: "6rem",

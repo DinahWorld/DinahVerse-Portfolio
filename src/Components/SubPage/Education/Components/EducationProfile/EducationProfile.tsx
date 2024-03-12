@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Box, Grid, Theme} from "@mui/material";
 import {SxProps} from "@mui/system";
 
@@ -6,7 +6,56 @@ interface EducationProfileProps {
     imageNumber: number;
 }
 
+function preloadImage(src: string) {
+    return new Promise((resolve, reject) => {
+        const img = new Image()
+        img.onload = function () {
+            resolve(img)
+        }
+        img.onerror = img.onabort = function () {
+            reject(src)
+        }
+        img.src = src
+    })
+}
+
 const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
+    const meImg: string[] = [
+        "assets/aboutMe/mini.png",
+        "assets/aboutMe/young.png",
+        "assets/aboutMe/adult.png",
+        "assets/noise/blue.png",
+        "assets/noise/red.png",
+        "assets/noise/black.png"
+    ]
+
+    useEffect(() => {
+        let isCancelled = false
+
+        async function effect() {
+            if (isCancelled) {
+                return
+            }
+
+            const imagesPromiseList: Promise<any>[] = []
+            for (const i of meImg) {
+                imagesPromiseList.push(preloadImage(i))
+            }
+
+            await Promise.all(imagesPromiseList)
+
+            if (isCancelled) {
+                return
+            }
+        }
+
+        effect()
+
+        return () => {
+            isCancelled = true
+        }
+    },)
+
     let imagePath = "";
     let imgSx: SxProps<Theme> = {};
     let bgColor = "";
@@ -15,8 +64,10 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
     switch (imageNumber) {
         case 1:
             bgColor = "rgba(179, 191, 255, 0.49)";
-            bgImg = "url(assets/noise/blue.png)";
-            imagePath = "assets/aboutMe/mini.png";
+            // @ts-ignore
+            imagePath = meImg.at(0);
+            // @ts-ignore
+            bgImg = "url(" + meImg.at(3) + ")";
             imgSx = {
                 position: "absolute",
                 width: "100%",
@@ -26,8 +77,10 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
             break;
         case 2:
             bgColor = "rgba(255, 188, 179, 0.49)";
-            bgImg = "url(assets/noise/red.png)";
-            imagePath = "assets/aboutMe/young.png";
+            // @ts-ignore
+            imagePath = meImg.at(1);
+            // @ts-ignore
+            bgImg = "url(" + meImg.at(4) + ")";
             imgSx = {
                 position: "absolute",
                 width: "100%",
@@ -37,8 +90,10 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
             break;
         case 3:
             bgColor = "rgba(0, 0, 0, 0.49)";
-            bgImg = "url(assets/noise/black.png)";
-            imagePath = "assets/aboutMe/adult.png";
+            // @ts-ignore
+            imagePath = meImg.at(2);
+            // @ts-ignore
+            bgImg = "url(" + meImg.at(5) + ")";
             imgSx = {
                 position: "absolute",
                 width: {xs: "100%", sm: "100%", md: "120%", lg: "120%", xl: "120%"},

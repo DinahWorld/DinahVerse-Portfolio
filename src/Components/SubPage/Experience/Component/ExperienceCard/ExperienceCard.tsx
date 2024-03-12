@@ -37,7 +37,8 @@ const ExperienceCard = (props: EducationCardProps) => {
         switch (props.job) {
             case 1:
                 return (
-                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"}
+                          justifyContent={{xs: "center", sm: "center", md: "start"}}>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/spring_boot.svg"}/>
                         </Grid>
@@ -57,7 +58,8 @@ const ExperienceCard = (props: EducationCardProps) => {
                 );
             case 2:
                 return (
-                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"}
+                          justifyContent={{xs: "center", sm: "center", md: "start"}}>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/java.svg"}/>
                         </Grid>
@@ -77,7 +79,8 @@ const ExperienceCard = (props: EducationCardProps) => {
                 );
             case 3:
                 return (
-                    <Grid item container xs={12} gap={2} alignItems={"center"} justifyContent={"start"}>
+                    <Grid item container xs={12} gap={2} alignItems={"center"}
+                          justifyContent={{xs: "center", sm: "center", md: "start"}}>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/avatar/avatar.png"}/>
                         </Grid>
@@ -115,7 +118,7 @@ const ExperienceCard = (props: EducationCardProps) => {
                                 visible: {opacity: 1},
                                 hidden: {opacity: 0}
                             }}>
-                    <Grid item container xs={12} sx={{marginBottom : "2rem"}}>
+                    <Grid item container xs={12} sx={{marginBottom: "2rem"}}>
                         <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
                             <Grid item xs={9}>
                                 <Typography lineHeight={1.1} fontSize={"1.3rem"} fontWeight={"bold"}>
@@ -139,23 +142,23 @@ const ExperienceCard = (props: EducationCardProps) => {
                         </Grid>
 
                         <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.8rem"} fontWeight={"bold"}>
+                            <Typography lineHeight={1.1} fontSize={"0.9rem"} fontWeight={"bold"}>
                                 {props.company}
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography lineHeight={1.1} fontSize={"0.6rem"} fontStyle={"italic"}  fontWeight={"bold"}>
+                            <Typography lineHeight={1.1} fontSize={"0.7rem"} fontStyle={"italic"} fontWeight={"bold"}>
                                 {props.date}
                             </Typography>
                         </Grid>
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Typography fontSize={"0.7rem"} sx={{whiteSpace: "break-spaces"}}>
+                        <Typography fontSize={"0.8rem"} sx={{whiteSpace: "break-spaces"}}>
                             {props.description}
                         </Typography>
                     </Grid>
-                    <Grid item container xs={12}>
+                    <Grid item container xs={12} sx={{marginTop: "1rem"}}>
                         {stack()}
                     </Grid>
                 </motion.div>

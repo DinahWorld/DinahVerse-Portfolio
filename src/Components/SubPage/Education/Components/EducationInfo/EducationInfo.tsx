@@ -58,6 +58,13 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
                 <Grid item xs={12}>
                     <Typography lineHeight={1.1}
                                 fontSize={"2rem"}
+                                sx={{
+                                    fontSize: {
+                                        xs: "1.6rem",
+                                        sm: "2rem",
+                                        md: "2rem",
+                                    }
+                                }}
                                 fontWeight={"bold"}
                                 color={`${textColor}`}
                     >
