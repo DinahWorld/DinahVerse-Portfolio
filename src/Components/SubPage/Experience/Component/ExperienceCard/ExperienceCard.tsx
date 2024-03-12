@@ -3,11 +3,12 @@ import {Box, Grid, Typography, useMediaQuery} from "@mui/material";
 import StackIcon from "../../../../StackIcon";
 import {getSvgPath} from "figma-squircle";
 import theme from "../../../../../theme";
+import {motion} from "framer-motion";
 
 interface EducationCardProps {
     title: string,
     description: string,
-    deg: string,
+    deg: number,
     url: string,
     job: number,
     company: string,
@@ -96,9 +97,7 @@ const ExperienceCard = (props: EducationCardProps) => {
         <Grid container item xs={12} gap={{xs: 4, sm: 4, md: 10}} justifyContent={"center"} alignItems={"center"}>
             <Grid item container
                   order={props.job === 2 ? 2 : 1}
-                  xs={12}
-                  sm={11}
-                  md={5}
+                  xs={12} sm={11} md={5}
                   sx={{
                       padding: "2rem",
                       borderRadius: "3rem",
@@ -108,66 +107,87 @@ const ExperienceCard = (props: EducationCardProps) => {
                   }}
                   gap={2}
             >
-                <Grid item container xs={12}>
-                    <Grid item xs={12}>
-                        <Typography lineHeight={1.1} fontSize={"1.3rem"} fontWeight={"bold"}>
-                            {props.title}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography lineHeight={1.1} fontSize={"0.8rem"}>
-                            {props.company}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography lineHeight={1.1} fontSize={"0.6rem"} fontStyle={"italic"}>
-                            {props.date}
-                        </Typography>
-                    </Grid>
-                </Grid>
+                <motion.div initial="hidden"
+                            whileInView="visible"
+                            viewport={{once: true}}
+                            transition={{type: "spring", stiffness: 50, damping: 20}}
+                            variants={{
+                                visible: {opacity: 1},
+                                hidden: {opacity: 0}
+                            }}>
+                    <Grid item container xs={12}>
+                        <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
+                            <Grid item xs={9}>
+                                <Typography lineHeight={1.1} fontSize={"1.3rem"} fontWeight={"bold"}>
+                                    {props.title}
+                                </Typography>
+                            </Grid>
+                            {isScreenLowerThanMD &&
+                                <Grid container item xs={'auto'} direction="row-reverse">
+                                    <Grid item xs={'auto'}>
+                                        <Box component="img"
+                                             src={props.url}
+                                             sx={{
+                                                 objectFit: "cover",
+                                                 clipPath: `path('${svgPathLittle}')`,
+                                                 width: "4rem",
+                                                 height: "4rem",
+                                                 transition: "transform 0.3s ease-in-out",
+                                                 "&:hover": {
+                                                     transform: "scale(1.1)",
+                                                 },
+                                             }}/>
+                                    </Grid>
+                                </Grid>
+                            }
+                        </Grid>
 
-                <Grid item xs={12}>
-                    <Typography fontSize={"0.7rem"} sx={{whiteSpace: "break-spaces"}}>
-                        {props.description}
-                    </Typography>
-                </Grid>
-                <Grid container item xs={12} justifyContent="space-between" gap={2}>
+                        <Grid item xs={12}>
+                            <Typography lineHeight={1.1} fontSize={"0.8rem"}>
+                                {props.company}
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography lineHeight={1.1} fontSize={"0.6rem"} fontStyle={"italic"}>
+                                {props.date}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        <Typography fontSize={"0.7rem"} sx={{whiteSpace: "break-spaces"}}>
+                            {props.description}
+                        </Typography>
+                    </Grid>
                     <Grid item container xs={12}>
                         {stack()}
                     </Grid>
-                    {isScreenLowerThanMD &&
-                        <Grid container item xs={12} direction="row-reverse">
-                            <Grid item xs={'auto'}>
-                                <Box component="img"
-                                     src={props.url}
-                                     sx={{
-                                         objectFit: "cover",
-                                         clipPath: `path('${svgPathLittle}')`,
-                                         width: "4rem",
-                                         height: "4rem",
-                                         transition: "transform 0.3s ease-in-out",
-                                         "&:hover": {
-                                             transform: "scale(1.1)",
-                                         },
-                                     }}/>
-                            </Grid>
-                        </Grid>
-                    }
-                </Grid>
+                </motion.div>
 
             </Grid>
-            {!isScreenLowerThanMD &&
+            {
+                !isScreenLowerThanMD &&
+
                 <Grid item xs={'auto'} order={props.job === 2 ? 1 : 2}>
-                    <Box component="img"
-                         src={props.url}
-                         alt={""}
-                         sx={{
-                             transform: "rotate(" + props.deg + "deg)",
-                             objectFit: "cover",
-                             clipPath: `path('${svgPath}')`,
-                             height: 400,
-                             width: 400
-                         }}/>
+                    <motion.div initial="hidden"
+                                whileInView="visible"
+                                viewport={{once: true}}
+                                transition={{type: "spring", stiffness: 260, damping: 20}}
+                                variants={{
+                                    visible: {scale: 1, rotate: props.deg},
+                                    hidden: {scale: 0, rotate: 0}
+                                }}>
+                        <Box component="img"
+                             src={props.url}
+                             alt={""}
+                             sx={{
+                                 objectFit: "cover",
+                                 clipPath: `path('${svgPath}')`,
+                                 height: 400,
+                                 width: 400
+                             }}/>
+                    </motion.div>
+
                 </Grid>
             }
         </Grid>

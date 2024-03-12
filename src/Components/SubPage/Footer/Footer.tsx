@@ -32,17 +32,24 @@ const Footer = () => {
                         </Grid>
                         <Grid item container xs={'auto'} gap={1}>
                             <Grid item container xs={'auto'} alignItems={"center"} justifyContent={"center"}>
-                                <motion.button
-                                    onClick={() => window.open('https://linkedin.com/in/dinath-sh')}
-                                    animate={{
-                                        width: "3.2rem",
-                                        height: "3.2rem",
-                                        padding: "0.6rem",
-                                        borderRadius: "0.8rem",
-                                        backgroundColor: "white",
-                                    }}
-                                    whileHover={{scale: 1.1}}
-                                    whileTap={{scale: 0.9}}
+                                <motion.button initial="hidden"
+                                               whileInView="visible"
+                                               viewport={{once: true}}
+                                               transition={{type: "spring", stiffness: 100, damping: 10}}
+                                               variants={{
+                                                   visible: {scale: 1},
+                                                   hidden: {scale: 0}
+                                               }}
+                                               onClick={() => window.open('https://linkedin.com/in/dinath-sh')}
+                                               animate={{
+                                                   width: "3.2rem",
+                                                   height: "3.2rem",
+                                                   padding: "0.6rem",
+                                                   borderRadius: "0.8rem",
+                                                   backgroundColor: "white",
+                                               }}
+                                               whileHover={{scale: 1.1}}
+                                               whileTap={{scale: 0.9}}
                                 >
                                     <Box component={"img"}
                                          src={"assets/stack/linkedin.svg"}
@@ -52,17 +59,25 @@ const Footer = () => {
                                 </motion.button>
                             </Grid>
                             <Grid item container xs={'auto'} alignItems={"center"} justifyContent={"center"}>
-                                <motion.button
-                                    onClick={() => window.open('https://github.com/DinahWorld')}
-                                    animate={{
-                                        width: "3.2rem",
-                                        height: "3.2rem",
-                                        padding: "0.6rem",
-                                        borderRadius: "0.8rem",
-                                        backgroundColor: "white",
-                                    }}
-                                    whileHover={{scale: 1.1}}
-                                    whileTap={{scale: 0.9}}
+
+                                <motion.button initial="hidden"
+                                               whileInView="visible"
+                                               viewport={{once: true}}
+                                               transition={{type: "spring", stiffness: 260, damping: 20}}
+                                               variants={{
+                                                   visible: {scale: 1},
+                                                   hidden: {scale: 0}
+                                               }}
+                                               onClick={() => window.open('https://github.com/DinahWorld')}
+                                               animate={{
+                                                   width: "3.2rem",
+                                                   height: "3.2rem",
+                                                   padding: "0.6rem",
+                                                   borderRadius: "0.8rem",
+                                                   backgroundColor: "white",
+                                               }}
+                                               whileHover={{scale: 1.1}}
+                                               whileTap={{scale: 0.9}}
                                 >
                                     <Box
                                         component={"img"}

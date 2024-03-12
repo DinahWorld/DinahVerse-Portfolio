@@ -44,7 +44,6 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
     }
     return (
         <Grid item container xs={12}
-              borderColor={"red"}
               gap={3}
               sx={{
                   padding: "2rem",

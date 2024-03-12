@@ -15,7 +15,7 @@ const AboutMePicture = () => {
             <Grid item xs={'auto'}>
                 <Box component={"img"} src="assets/avatar/about_avatar.png"
                      sx={{
-                         width: {md: "24rem", lg: "26rem"},
+                         width: {md: "24rem", lg: "30rem"},
                          borderRadius: "3.5em",
                          height: "100%"
                      }}

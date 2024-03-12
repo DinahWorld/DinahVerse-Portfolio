@@ -1,17 +1,28 @@
-import {Grid, Typography} from "@mui/material";
+import {Avatar, Grid, Typography, useMediaQuery} from "@mui/material";
 import StackIcon from "../../../../StackIcon";
 import React from "react";
+import theme from "../../../../../theme";
 
 const AboutMeInfo = () => {
+    const isScreenLowerThanMD = useMediaQuery(theme.breakpoints.down('md'));
+
     return (
         <>
             <Grid container item xs={12} gap={2}>
-                <Grid item xs={12}>
-                    <Typography fontWeight={"bold"} fontSize={"1.8rem"}>Hi, I’m Dinath 👋🏾</Typography>
+                <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
+                    <Grid item xs={'auto'}>
+                        <Typography fontWeight={"bold"} fontSize={"1.8rem"}>Hi, I’m Dinath 👋🏾</Typography>
+                    </Grid>
+                    {isScreenLowerThanMD &&
+                        <Grid item xs={'auto'}>
+                            <Avatar alt="Dinath Sunthararajah" src={"assets/avatar/avatar.png"}
+                                    sx={{width: "50px", height: "50px"}}/>
+                        </Grid>
+                    }
                 </Grid>
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
-                        <Typography fontSize={"0.8rem"}>
+                        <Typography fontSize={"0.9rem"}>
                             <strong>I am Dinath Sunthararajah, a 22-year-old </strong>driven by an insatiable passion
                             for
                             technology and
@@ -47,7 +58,7 @@ const AboutMeInfo = () => {
                         Skills
                     </Typography>
                 </Grid>
-                <Grid container item xs={12} gap={1} justifyContent={"start"} alignItems={"center"}>
+                <Grid container item xs={12} gap={1} justifyContent={"center"} alignItems={"center"}>
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/spring_boot.svg"}/>
                     </Grid>

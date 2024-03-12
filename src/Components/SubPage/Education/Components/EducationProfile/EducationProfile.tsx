@@ -52,6 +52,7 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
     return (
 
         <Grid item container
+              xs={'auto'}
               sx={{
                   width: {xs: 300, sm: 300, md: 300, lg: 400, xl: 400},
                   height: {xs: 300, sm: 300, md: 300, lg: 500, xl: 500},
@@ -62,7 +63,7 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
                   backgroundSize: "cover",
               }}>
 
-            <Box component="img" sx={imgSx} src={imagePath}/>
+            <Box component="img" sx={imgSx} src={imagePath} loading={"eager"}/>
         </Grid>
     );
 };

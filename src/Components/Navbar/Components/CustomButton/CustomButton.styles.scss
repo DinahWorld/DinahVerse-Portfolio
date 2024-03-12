@@ -5,6 +5,7 @@
   font-size: 1rem;
   font-family: 'Kotori Rose', serif;
   position: relative;
+  cursor: pointer;
 
   &::before {
     transition: all 0.6s cubic-bezier(1, -0.5, 0.265, 1);
@@ -31,7 +32,7 @@
       width: 0.8rem;
       height: 0.8rem;
       left: 10%;
-      top: 31%;
+      top: 35%;
       background: #ffffff;
     }
 

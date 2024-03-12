@@ -8,19 +8,19 @@ const Experience = () => {
             <Grid item sx={{position: "absolute", zIndex: "-1"}} xs={12}>
                 <img src={"assets/snake/snake-2.svg"} alt={""} style={{width: "100%"}}/>
             </Grid>
-            <Grid container item gap={10} xs={11}>
+            <Grid container item gap={4} xs={11}>
                 <Grid container item xs={12}>
                     <Grid item xs={12}>
                         <Typography
                             fontFamily={"Bright"}
                             lineHeight={1}
                             color={"#8f85b5"}
-                            sx={{fontSize: {xs: "3.2rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
+                            sx={{fontSize: {xs: "3.8rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
                         >
                             Experience.
                         </Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
                                     color={"#8f85b5"}
                         >
@@ -34,7 +34,7 @@ const Experience = () => {
                     <ExperienceCard
                         job={1}
                         url={"assets/experience/bnp.png"}
-                        deg={"10"}
+                        deg={10}
                         title={"Apprenticeship : Software Engineer"}
                         company={"BNP Paribas CIB"}
                         date={"2022/09 - Present"}
@@ -49,7 +49,7 @@ const Experience = () => {
                     <ExperienceCard
                         job={2}
                         url={"assets/experience/chart.png"}
-                        deg={"-10"}
+                        deg={-10}
                         company={"Laboratoire CHart"}
                         date={"2022/04 - 2022/07"}
                         title={"Internship : Software Engineer"}
@@ -61,7 +61,7 @@ const Experience = () => {
                     <ExperienceCard
                         job={3}
                         url={"assets/experience/p8.png"}
-                        deg={"13"}
+                        deg={13}
                         company={"Universite Paris VIII"}
                         date={"2021/09 - 2021/12"}
                         title={"Student Tutor : Computer Science"}

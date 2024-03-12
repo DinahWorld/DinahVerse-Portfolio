@@ -50,17 +50,20 @@ const Education = () => {
                     <Grid container item xs={12}
                           alignItems={"center"}
                           sx={{height: "100%", padding: "10px"}}
-                          gap={2}
+                          gap={{xs: 1, sm: 2, md: 2}}
                     >
 
                         <Grid item container xs={12}
                               justifyContent={"center"}
                               alignItems={"center"}
-                              gap={6}
+                              gap={{xs: 2, sm: 6, md: 6}}
                               sx={{height: "auto"}}
                               ref={ref}
                         >
-                            <Grid item container justifyContent={"center"} gap={6} alignItems={"flex-end"}>
+                            <Grid item container
+                                  gap={{xs: 1, sm: 2, md: 2}}
+                                  justifyContent={"center"}
+                                  alignItems={"flex-end"}>
                                 <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
                                     <Grid item xs={'auto'}>
@@ -68,7 +71,7 @@ const Education = () => {
                                                     color={imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")}
                                                     sx={{
                                                         fontSize: {
-                                                            xs: "3.2rem",
+                                                            xs: "3.8rem",
                                                             sm: "5rem",
                                                             md: "5.6rem",
                                                             lg: "6rem",

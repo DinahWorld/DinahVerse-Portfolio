@@ -34,7 +34,7 @@ const Sasia = () => {
                      sx={{
                          borderRadius: "3rem",
                          objectPosition: "right",
-                         width: {xs: "22rem", sm: "38rem", md: "100%", lg: "36rem"},
+                         width: {xs: "22rem", sm: "38rem", md: "100%", lg: "38rem"},
                          height: {xs: "16rem", sm: "24rem", md: "24rem", lg: "24rem"},
                          objectFit: "cover"
                      }}
