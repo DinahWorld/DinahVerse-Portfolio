@@ -24,6 +24,7 @@ const PersonalProject = () => {
                         <Grid item container
                               xs={12}
                               alignItems={"flex-end"}
+                              gap={{xs: 1, sm: 1, md: 0}}
                         >
                             <Grid item xs>
                                 <Typography color={"#4A42A9"}

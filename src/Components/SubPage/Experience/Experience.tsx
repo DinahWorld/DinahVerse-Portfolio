@@ -15,7 +15,7 @@ const Experience = () => {
                         <Typography
                             fontFamily={"Bright"}
                             lineHeight={1}
-                            color={"#bdb0eb"}
+                            color={"#4A42A9"}
                             sx={{fontSize: {xs: "3.8rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
                         >
                             Experience.
@@ -25,7 +25,7 @@ const Experience = () => {
                         <Grid item xs={12} sm={12} md={6}>
 
                             <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
-                                        color={"#bdb0eb"}
+                                        color={"#4A42A9"}
                             >
                                 I've gained practical software development experience through apprenticeships and
                                 internships,

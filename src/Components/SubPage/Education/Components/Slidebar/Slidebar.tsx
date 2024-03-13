@@ -33,61 +33,58 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
     }
 
     return (
-        <>
+        <Grid container className={"progress-bar"} sx={{width: "60vw"}}>
+            <Grid container item xs={12}>
 
-            <Grid container className={"progress-bar"} sx={{width: "60vw"}}>
-                <Grid container item xs={12}>
+                <div style={{
+                    position: "relative",
+                    left: "-10px",
+                    fontSize: "0.7rem"
+                }}>
+                    2016
+                </div>
+                <div style={{
+                    position: "relative",
+                    left: `${firstN}px`,
+                    fontSize: "0.7rem"
 
-                    <div style={{
-                        position: "relative",
-                        left: "-10px",
-                        fontSize: "0.7rem"
-                    }}>
-                        2016
-                    </div>
-                    <div style={{
-                        position: "relative",
-                        left: `${firstN}px`,
-                        fontSize: "0.7rem"
+                }}>
+                    2019
+                </div>
+                <div style={{
+                    position: "relative",
+                    left: `${secondN}px`,
+                    fontSize: "0.7rem"
+                }}>
+                    2022
+                </div>
+                <div style={{
+                    position: "relative",
+                    left: `${lengthN}px`,
+                    fontSize: "0.7rem"
+                }}>
+                    2024
+                </div>
 
-                    }}>
-                        2019
-                    </div>
-                    <div style={{
-                        position: "relative",
-                        left: `${secondN}px`,
-                        fontSize: "0.7rem"
-                    }}>
-                        2022
-                    </div>
-                    <div style={{
-                        position: "relative",
-                        left: `${lengthN}px`,
-                        fontSize: "0.7rem"
-                    }}>
-                        2024
-                    </div>
-
-                </Grid>
-                <Grid item xs={12}
-                      className={"progress-bar"}
-                      sx={{
-                          backgroundColor: `${mainColor}`,
-                          borderRadius: "3.5rem",
-                          padding: "3px"
-                      }}
-                >
-                    <div style={{
-                        backgroundColor: `${secondColor}`,
-                        height: '10px',
-                        width: "10px",
-                        borderRadius: "2em",
-                        position: "relative",
-                        left: `${hookedYPosition}px`
-                    }}/>
-                </Grid>
             </Grid>
-        </>
+            <Grid item xs={12}
+                  className={"progress-bar"}
+                  sx={{
+                      backgroundColor: `${mainColor}`,
+                      borderRadius: "3.5rem",
+                      padding: "3px"
+                  }}
+            >
+                <div style={{
+                    backgroundColor: `${secondColor}`,
+                    height: '10px',
+                    width: "10px",
+                    borderRadius: "2em",
+                    position: "relative",
+                    left: `${hookedYPosition}px`
+                }}/>
+            </Grid>
+        </Grid>
     )
 }
 
