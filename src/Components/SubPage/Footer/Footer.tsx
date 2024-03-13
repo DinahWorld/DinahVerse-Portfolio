@@ -47,6 +47,7 @@ const Footer = () => {
                                                    padding: "0.6rem",
                                                    borderRadius: "0.8rem",
                                                    backgroundColor: "white",
+                                                   cursor: "pointer"
                                                }}
                                                whileHover={{scale: 1.1}}
                                                whileTap={{scale: 0.9}}
@@ -75,6 +76,7 @@ const Footer = () => {
                                                    padding: "0.6rem",
                                                    borderRadius: "0.8rem",
                                                    backgroundColor: "white",
+                                                   cursor: "pointer"
                                                }}
                                                whileHover={{scale: 1.1}}
                                                whileTap={{scale: 0.9}}
