@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DinahVerse-Portfolio/static/css/main.18009629.css",
-    "main.js": "/DinahVerse-Portfolio/static/js/main.dfc68c59.js",
-    "static/js/453.1d83f233.chunk.js": "/DinahVerse-Portfolio/static/js/453.1d83f233.chunk.js",
-    "index.html": "/DinahVerse-Portfolio/index.html",
-    "main.18009629.css.map": "/DinahVerse-Portfolio/static/css/main.18009629.css.map",
-    "main.dfc68c59.js.map": "/DinahVerse-Portfolio/static/js/main.dfc68c59.js.map",
-    "453.1d83f233.chunk.js.map": "/DinahVerse-Portfolio/static/js/453.1d83f233.chunk.js.map"
+    "main.css": "/static/css/main.18009629.css",
+    "main.js": "/static/js/main.a4a0b17c.js",
+    "static/js/453.1d83f233.chunk.js": "/static/js/453.1d83f233.chunk.js",
+    "index.html": "/index.html",
+    "main.18009629.css.map": "/static/css/main.18009629.css.map",
+    "main.a4a0b17c.js.map": "/static/js/main.a4a0b17c.js.map",
+    "453.1d83f233.chunk.js.map": "/static/js/453.1d83f233.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18009629.css",
-    "static/js/main.dfc68c59.js"
+    "static/js/main.a4a0b17c.js"
   ]
 }
