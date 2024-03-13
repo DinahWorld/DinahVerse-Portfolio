@@ -15,7 +15,7 @@ interface ProjectCardProps {
 const svgPath = getSvgPath({
     width: 16 * 26,
     height: 16 * 16,
-    cornerRadius: 50 - 5,
+    cornerRadius: 50,
     cornerSmoothing: 1,
 })
 
@@ -24,7 +24,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <motion.div initial="hidden"
                     whileInView="visible"
                     viewport={{once: true}}
-                    transition={{type: "spring", stiffness: 200, damping: 10}}
+                    transition={{type: "spring", stiffness: 200, damping: 18}}
                     animate={{
                         cursor: "pointer"
                     }}
@@ -41,7 +41,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                   justifyContent={"center"}
                   alignItems={"center"}
                   direction="column"
-                  gap={2}
+                  gap={1}
             >
                 <Grid item container xs={'auto'}
                       direction="column"

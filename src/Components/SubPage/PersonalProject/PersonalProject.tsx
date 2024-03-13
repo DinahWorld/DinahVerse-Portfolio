@@ -84,8 +84,6 @@ const PersonalProject = () => {
                           xs={12}
                           justifyContent={"center"}
                           alignItems={"center"}
-                          columnGap={10}
-                          rowGap={4}
                     >
 
                         <ProjectCard stack={"REACTJS - MUI - FIGMA"}
@@ -134,6 +132,48 @@ const PersonalProject = () => {
                                      github={"assets/stack/touch.svg"}
                                      number={1}
                                      url={"https://github.com/DinahWorld/DinaTouch-p8"}
+                        />
+                        <ProjectCard stack={"C - Algorithms - Data Structure"}
+                                     title={"Public Transit System"}
+                                     img={"assets/projects/train.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={0}
+                                     url={"https://github.com/DinahWorld/Metro-de-Mexico-p8"}
+                        />
+                        <ProjectCard stack={"Rust - GTK-RS"}
+                                     title={"Useless Document Generator"}
+                                     img={"assets/projects/document.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={1}
+                                     url={"https://github.com/DinahWorld/Useless-Document-Generator-p8"}
+                        />
+                        <ProjectCard stack={"C - GL4D"}
+                                     title={"Solar System"}
+                                     img={"assets/projects/solar.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={0}
+                                     url={"https://github.com/DinahWorld/Systeme-Solaire-GL4D-p8"}
+                        />
+                        <ProjectCard stack={"Python"}
+                                     title={"TCP Chat with RSA and DH Encryption"}
+                                     img={"assets/projects/chat.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={1}
+                                     url={"https://github.com/DinahWorld/DH-EcryptionChat-p8"}
+                        />
+                        <ProjectCard stack={"C - API Watson Additional Translator"}
+                                     title={"FR-EN translator on Linux Terminal"}
+                                     img={"assets/projects/translate.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={0}
+                                     url={"https://github.com/DinahWorld/Traducteur-FR-EN"}
+                        />
+                        <ProjectCard stack={"Javascript - NodeJS"}
+                                     title={"DinaConverter_mp4"}
+                                     img={"assets/projects/youtube.png"}
+                                     github={"assets/stack/touch.svg"}
+                                     number={1}
+                                     url={"https://github.com/DinahWorld/DinaConverter_mp4"}
                         />
                     </Grid>
                 </Grid>

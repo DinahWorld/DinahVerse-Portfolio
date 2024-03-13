@@ -49,10 +49,13 @@ const ExperienceCard = (props: EducationCardProps) => {
                             <StackIcon img={"assets/stack/cassandra.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <StackIcon img={"assets/stack/jira.svg"}/>
+                            <StackIcon img={"assets/stack/spark.svg"}/>
                         </Grid>
                         <Grid item xs={'auto'}>
                             <StackIcon img={"assets/stack/jenkins.svg"}/>
+                        </Grid>
+                        <Grid item xs={'auto'}>
+                            <StackIcon img={"assets/stack/jira.svg"}/>
                         </Grid>
                     </Grid>
                 );

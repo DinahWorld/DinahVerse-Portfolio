@@ -23,10 +23,7 @@ const Experience = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Grid item xs={12} sm={12} md={6}>
-
-                            <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
-                                        color={"#4A42A9"}
-                            >
+                            <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}} color={"#4A42A9"}>
                                 I've gained practical software development experience through apprenticeships and
                                 internships,
                                 working on back-end and front-end projects in Java, JavaFX, and Spring Boot.
