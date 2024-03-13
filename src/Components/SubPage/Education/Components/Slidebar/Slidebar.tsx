@@ -15,7 +15,7 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
     let secondColor = "";
     let firstN = first - 30;
     let secondN = second - 60;
-    let lengthN = length - 90;
+    let lengthN = length - 95;
 
     switch (imageNumber) {
         case 1:
@@ -67,12 +67,11 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
                 </div>
 
             </Grid>
-            <Grid item xs={12}
-                  className={"progress-bar"}
+            <Grid item xs={12} className={"progress-bar"}
                   sx={{
                       backgroundColor: `${mainColor}`,
                       borderRadius: "3.5rem",
-                      padding: "3px"
+                      padding: "3px",
                   }}
             >
                 <div style={{

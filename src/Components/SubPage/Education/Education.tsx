@@ -8,15 +8,17 @@ import theme from "../../../theme";
 
 
 const Education = () => {
-    const [progressBarLength, setProgressBarLength] = useState<number>(0);
+    const progressBar = document.querySelector('#root');
+    // @ts-ignore
+    const [progressBarLength, setProgressBarLength] = useState<number>(progressBar.offsetWidth * 0.6);
     const [imageNumber, setImageNumber] = useState<number>(1);
     const ref = React.useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
         offset: ["100vh end", "end 100%"],
     });
-    const progressBar = document.querySelector('#root')
     const [hookedYPosition, setHookedYPosition] = React.useState(0);
+
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         // @ts-ignore
         setHookedYPosition(latest * (progressBar.offsetWidth * 0.6));
@@ -30,7 +32,7 @@ const Education = () => {
     return (
         <Grid item container xs={12}
               ref={ref}
-              sx={{height: "400vw", marginTop: "4rem", marginBottom: "4rem", zIndex: "-3"}}
+              sx={{height: "200vw", marginTop: "4rem", marginBottom: "4rem", zIndex: "-3"}}
         >
             <Grid item container xs={12} className={"sticky-element"}
                   justifyContent={"center"}
@@ -79,7 +81,7 @@ const Education = () => {
                                                         }
                                                     }}
                                         >
-                                            Education.
+                                            Education
                                         </Typography>
                                     </Grid>
                                     {isScreenSmallerThanMD &&
