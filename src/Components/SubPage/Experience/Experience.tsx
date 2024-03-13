@@ -4,7 +4,8 @@ import ExperienceCard from "../Experience/Component/ExperienceCard";
 
 const Experience = () => {
     return (
-        <Grid container item xs={12} justifyContent={"center"} alignItems={"center"}>
+        <Grid container item xs={12} justifyContent={"center"} alignItems={"center"}
+        >
 
             <Grid container item gap={4} xs={11}>
                 <Grid item sx={{position: "absolute", zIndex: "-1", left: "0%"}} xs={12}>
@@ -18,7 +19,7 @@ const Experience = () => {
                             color={"#4A42A9"}
                             sx={{fontSize: {xs: "3.8rem", sm: "5rem", md: "6rem", lg: "6rem", xl: "6rem"}}}
                         >
-                            Experience.
+                            Experience
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
@@ -40,11 +41,9 @@ const Experience = () => {
                         company={"BNP Paribas CIB"}
                         date={"2022/09 - Present"}
                         description={"" +
-                            "- I am currently involved in a Big Data project, working on a monolithic application designed to process\n" +
-                            "significant volumes of data for Business Analytics (BA).\n\n" +
-                            "- My responsibilities encompass the implementation of new controllers and services, troubleshooting " +
-                            "production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
-                            "- Additionally, I have contributed to DevOps activities using Jenkins"
+                            "- I am currently involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
+                            "- My responsibilities encompass the implementation of new controllers and services, troubleshooting production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
+                            "- Additionally, I have contributed to DevOps activities using Jenkins."
                         }
                     />
                     <ExperienceCard

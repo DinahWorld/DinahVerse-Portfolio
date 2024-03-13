@@ -20,8 +20,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Le Blanc-Mesnil, Paris, France"
             school = "Lycee W.A Mozart";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(209, 216, 255, 0.20) 0%, rgba(224, 229, 255, 0.20) 100%)";
-            schoolDesc = "I earned my High School Diploma with a specialization in computer science, " +
-                "demonstrating a strong foundation for software development for information technology."
+            schoolDesc = "Earned High School Diploma in Computer Science, showing strong base for IT software dev."
             break;
         case 2:
             textColor = "#FF5D5D";
@@ -29,8 +28,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Saint-Denis, Paris, France"
             school = "Universite Paris VIII";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 209, 209, 0.20) 0%, rgba(255, 224, 224, 0.20) 100%)";
-            schoolDesc = "I graduated with a Bachelor in Computer Science from Universite Paris VIII, gaining a solid " +
-                "foundation in software development and algorithms."
+            schoolDesc = "Graduated with Bachelor in Computer Science from Univ Paris VIII, mastering software and algorithms."
             break;
         case 3:
             textColor = "#0F1727";
@@ -38,8 +36,7 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolAddr = "Paris, France"
             school = "Epitech Technology";
             bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.20) 0%, rgba(199, 199, 199, 0.20) 100%)";
-            schoolDesc = "Epitech Paris Master's in Computer Science program, combined with my work-study experience, " +
-                "has prepared me to become a highly skilled and adaptable software engineer."
+            schoolDesc = "Epitech Paris Master's in Computer Science, plus work-study, readies me for software engineering."
             break;
     }
     return (

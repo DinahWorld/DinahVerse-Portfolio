@@ -116,7 +116,7 @@ const AboutMeInfo = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography fontSize={"0.8rem"}>
+                    <Typography fontSize={"0.9rem"}>
                         French - English - Tamil
                     </Typography>
                 </Grid>

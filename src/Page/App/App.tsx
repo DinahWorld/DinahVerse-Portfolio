@@ -6,9 +6,13 @@ import Education from "Components/SubPage/Education";
 import Experience from "Components/SubPage/Experience";
 import PersonalProject from "Components/SubPage/PersonalProject";
 import Footer from "Components/SubPage/Footer";
+import ReactGA from 'react-ga';
 
 
 const App = () => {
+    ReactGA.initialize('G-95SES5JGWM');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <Grid container>
             <Grid item xs={12}>

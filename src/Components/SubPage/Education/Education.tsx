@@ -32,7 +32,12 @@ const Education = () => {
     return (
         <Grid item container xs={12}
               ref={ref}
-              sx={{height: {xs : "400vw", sm : "400vw", md : "200vw"}, marginTop: "4rem", marginBottom: "4rem", zIndex: "-3"}}
+              sx={{
+                  minHeight: {xs: "400vw", sm: "400vw", md: "200vw"},
+                  marginTop: "4rem",
+                  marginBottom: "4rem",
+                  zIndex: "-3"
+              }}
         >
             <Grid item container xs={12} className={"sticky-element"}
                   justifyContent={"center"}
@@ -63,20 +68,24 @@ const Education = () => {
                               ref={ref}
                         >
                             <Grid item container
-                                  gap={{xs: 1, sm: 2, md: 2}}
                                   justifyContent={"center"}
-                                  alignItems={"flex-end"}>
+                                  alignItems={"flex-end"}
+                            >
                                 <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
-                                    <Grid item xs={'auto'}>
-                                        <Typography fontFamily={{xs: "Kotori Rose", sm : "Kotori Rose", md : "Bright"}}
-                                                    fontWeight={{xs : "bold", sm : "bold", md : "normal"}}
-                                                    color={imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")}
+                                    <Grid item xs={"auto"} sm={"auto"} md={12}>
+                                        <Typography fontFamily={{xs: "Kotori Rose", sm: "Kotori Rose", md: "Bright"}}
+                                                    fontWeight={{xs: "bold", sm: "bold", md: "normal"}}
+                                                    textAlign={{xs: "center", sm: "center", md: "start"}}
+                                                    lineHeight={1}
+                                                    color={
+                                                        imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")
+                                                    }
                                                     sx={{
                                                         fontSize: {
                                                             xs: "4.2rem",
-                                                            sm: "5rem",
-                                                            md: "5.6rem",
+                                                            sm: "4.2rem",
+                                                            md: "4.6rem",
                                                             lg: "6rem",
                                                             xl: "6rem"
                                                         }
