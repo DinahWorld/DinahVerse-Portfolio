@@ -26,7 +26,7 @@ const HomeBanner = () => {
                 <Grid item xs={'auto'}>
                     <Typography fontWeight={"bold"} color={"white"} fontSize={"3rem"}>
                         Hi, I’m Dinath. <br/>
-                        A Full-Stack Engineer
+                        A Software Engineer
                     </Typography>
                 </Grid>
                 <Grid item xs={'auto'}>
