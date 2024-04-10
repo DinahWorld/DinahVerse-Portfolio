@@ -1,15 +1,12 @@
 {
   "files": {
-    "main.css": "/DinahVerse-Portfolio/static/css/main.18009629.css",
-    "main.js": "/DinahVerse-Portfolio/static/js/main.1b4fcfdd.js",
+    "main.js": "/DinahVerse-Portfolio/static/js/main.f4b5f621.js",
     "static/js/453.f1550b01.chunk.js": "/DinahVerse-Portfolio/static/js/453.f1550b01.chunk.js",
     "index.html": "/DinahVerse-Portfolio/index.html",
-    "main.18009629.css.map": "/DinahVerse-Portfolio/static/css/main.18009629.css.map",
-    "main.1b4fcfdd.js.map": "/DinahVerse-Portfolio/static/js/main.1b4fcfdd.js.map",
+    "main.f4b5f621.js.map": "/DinahVerse-Portfolio/static/js/main.f4b5f621.js.map",
     "453.f1550b01.chunk.js.map": "/DinahVerse-Portfolio/static/js/453.f1550b01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18009629.css",
-    "static/js/main.1b4fcfdd.js"
+    "static/js/main.f4b5f621.js"
   ]
 }
