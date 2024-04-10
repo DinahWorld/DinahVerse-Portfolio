@@ -79,10 +79,10 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
         }>
             <Box component="img" sx={{
                 position: "absolute",
-                top: {xs: "-2rem", sm: "-3rem", md: "-5rem", lg: "-7rem"},
-                left: {xs: "-2.8rem", sm: "-3.8rem", md: "-3rem", lg: "-4rem"},
-                width: {xs: "22rem", sm: "25rem", md: "30rem", lg: "38rem"},
-                height: {xs: "22rem", sm: "25rem", md: "30rem", lg: "38rem"},
+                top: {xs: "-3rem", sm: "-4rem", md: "-2rem", lg: "1rem"},
+                left: {xs: "-2.8rem", sm: "-3.8rem", md: "0rem", lg: "-3rem"},
+                width: {xs: "22rem", sm: "25rem", md: "27rem", lg: "30rem"},
+                height: {xs: "22rem", sm: "25rem", md: "27rem", lg: "30rem"},
                 objectFit: "contain",
             }} src={imagePath} loading={"eager"}/>
         </Grid>

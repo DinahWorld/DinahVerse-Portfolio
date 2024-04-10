@@ -86,8 +86,8 @@ const Education = () => {
                                                             xs: "4.2rem",
                                                             sm: "4.2rem",
                                                             md: "4.6rem",
-                                                            lg: "6rem",
-                                                            xl: "6rem"
+                                                            lg: "5.5rem",
+                                                            xl: "5.5rem"
                                                         }
                                                     }}
                                         >

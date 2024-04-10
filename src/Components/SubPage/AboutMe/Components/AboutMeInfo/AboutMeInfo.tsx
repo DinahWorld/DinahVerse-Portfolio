@@ -11,7 +11,8 @@ const AboutMeInfo = () => {
             <Grid container item xs={12} gap={2}>
                 <Grid item container xs={12} justifyContent={"space-between"} alignItems={"center"}>
                     <Grid item xs={'auto'}>
-                        <Typography fontWeight={"bold"} fontSize={"1.8rem"}>Hi, I’m Dinath 👋🏾</Typography>
+                        <Typography fontWeight={"bold"} fontSize={"2rem"} color={"#2e2e2e"}>Hi, I’m Dinath
+                            👋🏾</Typography>
                     </Grid>
                     {isScreenLowerThanMD &&
                         <Grid item xs={'auto'}>
@@ -22,7 +23,7 @@ const AboutMeInfo = () => {
                 </Grid>
                 <Grid container item xs={12} gap={2}>
                     <Grid item xs={12}>
-                        <Typography fontSize={"0.9rem"}>
+                        <Typography fontSize={"1rem"} color={"#2e2e2e"}>
                             <strong>I am Dinath Sunthararajah, a 22-year-old </strong>driven by an insatiable passion
                             for
                             technology and
@@ -35,14 +36,6 @@ const AboutMeInfo = () => {
                             back-end
                             developer at BNP Paribas CIB.
                             <br/><br/>
-                            <strong>Starting from October 2024,</strong> I am embarking on a new chapter in my
-                            professional journey
-                            by
-                            seeking a VIE (Volontariat International en Entreprise) opportunity. This program will
-                            allow
-                            me to broaden my horizons by immersing myself in a new culture and contributing to
-                            meaningful projects.
-                            <br/><br/>
                             <strong>Beyond the technological realm,</strong> I am an enthusiastic traveler, captivated
                             by the richness of
                             cultures and the beauty of Asian music.
@@ -50,15 +43,13 @@ const AboutMeInfo = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid container item xs={12} sm gap={2}>
+            <Grid container item xs={12} sm gap={1}>
                 <Grid item xs={12}>
-                    <Typography fontSize={"1.2rem"}
-                                fontWeight={"bold"}
-                    >
+                    <Typography fontSize={"1.2rem"} fontWeight={"bold"}>
                         Skills
                     </Typography>
                 </Grid>
-                <Grid container item xs={12} gap={1} justifyContent={"center"} alignItems={"center"}>
+                <Grid container item xs={12} gap={1} alignItems={"center"}>
                     <Grid item xs={'auto'}>
                         <StackIcon img={"assets/stack/spring_boot.svg"}/>
                     </Grid>
