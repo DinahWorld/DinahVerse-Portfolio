@@ -45,7 +45,7 @@ const Education = () => {
                   sx={{
                       position: "sticky",
                       height: "100vh",
-                      top: "-1px",
+                      top: {xs: "0px", sm: "0rem", md: "-2rem", lg: "-3rem", xl: "-3rem"},
                       zIndex: "-1",
                       backgroundImage: "url(assets/my-noise.png)",
                   }}
@@ -65,12 +65,10 @@ const Education = () => {
                               alignItems={"center"}
                               gap={{xs: 2, sm: 6, md: 6}}
                               sx={{height: "auto"}}
-                              ref={ref}
-                        >
+                              ref={ref}>
                             <Grid item container
                                   justifyContent={"center"}
-                                  alignItems={"flex-end"}
-                            >
+                                  alignItems={"flex-end"}>
                                 <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
                                     <Grid item xs={"auto"} sm={"auto"} md={12}>

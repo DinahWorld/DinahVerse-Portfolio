@@ -33,7 +33,7 @@ const Footer = () => {
                                 </Grid>
                             </Grid>
                             <Grid item xs={'auto'}>
-                                <Typography color={"white"} fontSize={"0.8rem"}>
+                                <Typography color={"white"} fontSize={"1rem"}>
                                     dinath.sh@outlook.fr
                                 </Typography>
                             </Grid>
@@ -53,7 +53,7 @@ const Footer = () => {
                                                    width: "3.2rem",
                                                    height: "3.2rem",
                                                    padding: "0.6rem",
-                                                   borderRadius: "0.8rem",
+                                                   borderRadius: "1rem",
                                                    backgroundColor: "white",
                                                    cursor: "pointer"
                                                }}
@@ -82,7 +82,7 @@ const Footer = () => {
                                                    width: "3.2rem",
                                                    height: "3.2rem",
                                                    padding: "0.6rem",
-                                                   borderRadius: "0.8rem",
+                                                   borderRadius: "1rem",
                                                    backgroundColor: "white",
                                                    cursor: "pointer"
                                                }}

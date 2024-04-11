@@ -44,7 +44,7 @@ const PersonalProject = () => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} md={4}>
-                                <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}}
+                                <Typography fontSize={"1rem"}
                                             color={"#4A42A9"}
                                 >
                                     Dimovr, an ambitious school project, allows me to hone my skills in leadership

@@ -6,7 +6,7 @@ import Stars from "Components/Background/Stars";
 import {useMousePosition} from "Hook/useMousePosition";
 import Filter from "Components/Background/Filter/Filter";
 import CustomStars from "Components/Background/CustomStars/CustomStars";
-import theme from "../../../../../theme";
+import theme from "theme";
 
 
 const HomeBanner = () => {
@@ -15,14 +15,17 @@ const HomeBanner = () => {
 
     return (
 
-        <Grid container
+        <Grid item container
               sx={{
                   backgroundColor: "#000018",
                   height: "100%",
-                  borderRadius: {xs: "0rem", sm: "1rem"}
-              }}>
+                  width: "100%",
+                  borderRadius: {xs: "0rem", sm: "0rem", md: "1rem"}
+              }} xs={12}>
 
-            <Grid container item xs={12} sx={{zIndex: "1"}} justifyContent={"center"} alignItems={"center"}
+            <Grid container item xs={12} sx={{position: "absolute", width: "97%", height: "97%", zIndex: "1"}}
+                  justifyContent={"center"}
+                  alignItems={"center"}
                   direction={"column"}>
                 <Grid item xs={'auto'}>
                     <Typography fontWeight={"bold"} color={"white"} fontSize={"3rem"} textAlign={"center"}>
@@ -36,9 +39,8 @@ const HomeBanner = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid container sx={{position: "absolute", width: "98%", height: "98%"}}>
+            <Grid item container>
                 <svg fill='none' xmlns='http://www.w3.org/2000/svg' style={{width: "100%"}}>
-                    <CustomStars x={(position.x / 15) - 1400} y={(position.y / 20) - 300} sizex={3500} sizey={2000}/>
                     <CustomStars x={(position.x / 20) - 900} y={(position.y / 20) - 1800} sizex={7000} sizey={2000}/>
                     <CustomStars x={(-position.x / 20) - 6500} y={(position.y / 30) - 1500} sizex={9000} sizey={2000}/>
                     <Stars x={(-position.x / 100) + 250} y={(position.y / 60)} sizex={300} sizey={500}/>

@@ -58,12 +58,12 @@ const ProjectCard = (props: ProjectCardProps) => {
                 <Grid item container xs={12} direction="row" justifyContent="space-between">
                     <Grid item container xs={'auto'} direction="column">
                         <Grid item xs={'auto'}>
-                            <Typography fontSize={"0.6rem"}>
+                            <Typography fontSize={"0.8rem"}>
                                 {props.stack}
                             </Typography>
                         </Grid>
                         <Grid item xs={'auto'}>
-                            <Typography fontSize={"1.2rem"}>
+                            <Typography fontSize={"1.4rem"}>
                                 {props.title}
                             </Typography>
                         </Grid>

@@ -24,9 +24,8 @@ const Experience = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <Grid item xs={12} sm={12} md={6}>
-                            <Typography fontSize={{xs: "0.6rem", sm: "0.8rem", md: "0.8rem"}} color={"#4A42A9"}>
-                                I've gained practical software development experience through apprenticeships and
-                                internships,
+                            <Typography fontSize={"1rem"} color={"#4A42A9"}>
+                                I have achieved experience in software development through internships,
                                 working on back-end and front-end projects in Java, JavaFX, and Spring Boot.
                             </Typography>
                         </Grid>
@@ -37,13 +36,13 @@ const Experience = () => {
                         job={1}
                         url={"assets/experience/bnp.png"}
                         deg={10}
-                        title={"Apprenticeship : Software Engineer"}
+                        title={"Internship : Software Engineer"}
                         company={"BNP Paribas CIB"}
                         date={"2022/09 - Present"}
                         description={"" +
-                            "- I am currently involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
-                            "- My responsibilities encompass the implementation of new controllers and services, troubleshooting production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
-                            "- Additionally, I have contributed to DevOps activities using Jenkins."
+                            "I am currently involved in a Big Data project, working on a monolithic application designed to process significant volumes of data for Business Analytics (BA).\n\n" +
+                            "My responsibilities encompass the implementation of new controllers and services, troubleshooting production issues, and optimizing a parser to reduce memory usage in the Java Virtual Machine (JVM).\n\n" +
+                            "Additionally, I have contributed to DevOps activities using Jenkins."
                         }
                     />
                     <ExperienceCard
@@ -53,7 +52,7 @@ const Experience = () => {
                         company={"Laboratoire CHart"}
                         date={"2022/04 - 2022/07"}
                         title={"Internship : Software Engineer"}
-                        description={"During my tenure as a Software Developer, I was immersed in Java development, specifically JavaFX.\n\n" +
+                        description={"During my internship as a Software Developer, I was immersed in Java development, specifically JavaFX.\n\n" +
                             "My primary responsibilities included crafting new user interface components using JavaFX, enhancing the user experience of existing applications, and optimizing software performance.\n\n" +
                             "This experience not only honed my Java and JavaFX skills but also exposed me to the broader spectrum of software development, user-centric design, and IoT implementation."
                         }

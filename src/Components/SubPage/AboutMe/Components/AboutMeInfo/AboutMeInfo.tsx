@@ -38,7 +38,7 @@ const AboutMeInfo = () => {
                             <br/><br/>
                             <strong>Beyond the technological realm,</strong> I am an enthusiastic traveler, captivated
                             by the richness of
-                            cultures and the beauty of Asian music.
+                            cultures in the World 🌏.
                         </Typography>
                     </Grid>
                 </Grid>

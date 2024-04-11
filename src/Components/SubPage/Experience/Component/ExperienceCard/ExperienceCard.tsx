@@ -157,7 +157,7 @@ const ExperienceCard = (props: EducationCardProps) => {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Typography fontSize={"0.8rem"} sx={{whiteSpace: "break-spaces"}}>
+                        <Typography fontSize={"1rem"} sx={{whiteSpace: "break-spaces"}}>
                             {props.description}
                         </Typography>
                     </Grid>

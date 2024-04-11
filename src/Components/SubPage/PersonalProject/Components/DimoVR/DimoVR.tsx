@@ -50,7 +50,7 @@ const DimoVR = () => {
                 </Grid>
                 <Grid item xs={'auto'}>
                     <Typography fontSize={"1.2rem"}>
-                        DimoVR : An VR Classroom
+                        DimoVR : A VR Classroom
                     </Typography>
                 </Grid>
             </Grid>
