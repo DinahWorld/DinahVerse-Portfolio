@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Grid} from "@mui/material";
+import {Grid, useMediaQuery} from "@mui/material";
 import Home from "Components/SubPage/Home";
 import AboutMe from "Components/SubPage/AboutMe";
 import Education from "Components/SubPage/Education";
@@ -9,6 +9,7 @@ import Footer from "Components/SubPage/Footer";
 
 import useMouse from "@react-hook/mouse-position";
 import {motion} from "framer-motion";
+import theme from "../../theme";
 
 const App = () => {
     const [cursorVariant, setCursorVariant] = useState("default");
@@ -51,18 +52,21 @@ const App = () => {
         damping: 28
     };
 
+    const isScreenSmallerThanMD = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <div className="container" ref={ref}>
-            <Grid item sx={{position: "absolute"}}>
-                <motion.div
-                    variants={variants}
-                    className="circle"
-                    animate={cursorVariant}
-                    transition={spring}
-                >
-                </motion.div>
-            </Grid>
+            {!isScreenSmallerThanMD &&
+                <Grid item sx={{position: "absolute"}}>
+                    <motion.div
+                        variants={variants}
+                        className="circle"
+                        animate={cursorVariant}
+                        transition={spring}
+                    >
+                    </motion.div>
+                </Grid>
+            }
             <Grid container>
                 <Grid item xs={12}>
                     <Home/>

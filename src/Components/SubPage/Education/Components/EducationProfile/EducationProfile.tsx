@@ -79,8 +79,8 @@ const EducationProfile: React.FC<EducationProfileProps> = ({imageNumber}) => {
         }>
             <Box component="img" sx={{
                 position: "absolute",
-                top: {xs: "-3rem", sm: "-4rem", md: "-2rem", lg: "1rem"},
-                left: {xs: "-2.8rem", sm: "-3.8rem", md: "0rem", lg: "-3rem"},
+                top: {xs: "-3rem", sm: "-4rem", md: "-2rem", lg: "-2.5rem"},
+                left: {xs: "-2.8rem", sm: "-3.8rem", md: "0rem", lg: "0rem"},
                 width: {xs: "22rem", sm: "25rem", md: "27rem", lg: "30rem"},
                 height: {xs: "22rem", sm: "25rem", md: "27rem", lg: "30rem"},
                 objectFit: "contain",

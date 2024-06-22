@@ -66,10 +66,10 @@ const Education = () => {
                               gap={{xs: 2, sm: 6, md: 6}}
                               sx={{height: "auto"}}
                               ref={ref}>
-                            <Grid item container
+                            <Grid item container gap={2}
                                   justifyContent={"center"}
-                                  alignItems={"flex-end"}>
-                                <Grid item container md={6} sm={11} xs={11} justifyContent={"center"}
+                                  alignItems={"center"}>
+                                <Grid item container md={6} lg={6} xl={3} sm={11} xs={11} justifyContent={"center"}
                                       alignItems={"center"}>
                                     <Grid item xs={"auto"} sm={"auto"} md={12}>
                                         <Typography fontFamily={{xs: "Kotori Rose", sm: "Kotori Rose", md: "Bright"}}
@@ -85,7 +85,7 @@ const Education = () => {
                                                             sm: "4.2rem",
                                                             md: "4.6rem",
                                                             lg: "5.5rem",
-                                                            xl: "5.5rem"
+                                                            xl: "3.6rem"
                                                         }
                                                     }}
                                         >
