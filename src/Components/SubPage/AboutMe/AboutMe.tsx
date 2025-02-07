@@ -9,14 +9,13 @@ const AboutMe = () => {
 
     return (
         <>
-            {/*<AboutMeBackground/>*/}
             <Grid container justifyContent={"center"} alignItems={"center"}
                   sx={{
                       minHeight: "100vh",
                       marginTop: "3rem",
                       marginBottom: "3rem"
                   }}
-                  gap={8}
+                          gap={8}
             >
                 {isScreenGreaterThaMD &&
                     <Grid item container position="relative" xs={'auto'}>
