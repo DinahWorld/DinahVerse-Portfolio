@@ -77,7 +77,7 @@ const Education = () => {
                                                     textAlign={{xs: "center", sm: "center", md: "start"}}
                                                     lineHeight={1}
                                                     color={
-                                                        imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#0F1727")
+                                                        imageNumber === 1 ? "#5D68FF" : (imageNumber === 2 ? "#FF5D5D" : "#A381FF")
                                                     }
                                                     sx={{
                                                         fontSize: {

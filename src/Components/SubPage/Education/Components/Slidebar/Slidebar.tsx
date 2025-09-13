@@ -27,8 +27,8 @@ const Slidebar: React.FC<SlidebarProps> = ({length, first, second, imageNumber, 
             secondColor = "#FF8C8C";
             break;
         case 3:
-            mainColor = "#7A7B80";
-            secondColor = "#FFFFFF";
+            mainColor = "#E5DCFF";
+            secondColor = "#7A7B80";
             break;
     }
 

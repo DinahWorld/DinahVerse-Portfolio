@@ -31,11 +31,11 @@ const EducationInfo: React.FC<EducationInfoProps> = ({imageNumber}) => {
             schoolDesc = "Graduated with a Bachelor in Computer Science from Univ Paris VIII, mastering software and algorithms."
             break;
         case 3:
-            textColor = "#0F1727";
+            textColor = "#A381FF";
             schoolGrade = "Master of Science in Computer Science"
             schoolAddr = "Paris, France"
             school = "Epitech Technology";
-            bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.20) 0%, rgba(199, 199, 199, 0.20) 100%)";
+            bgColor = "radial-gradient(50% 50% at 50% 50%, rgba(237, 230, 255, 0.20) 0%, rgba(237, 230, 255, 0.20) 100%)";
             schoolDesc = "Epitech Paris Master's in Computer Science, and work-study, readies me for software engineering."
             break;
     }
